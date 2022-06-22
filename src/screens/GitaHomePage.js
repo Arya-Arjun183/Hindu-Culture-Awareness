@@ -5,7 +5,10 @@ const GitaHomePage = (props) => {
   return (
   <View>
     <TouchableOpacity 
-    onPress={() => props.navigation.navigate("ChapterOne")}>
+    onPress={() => props.navigation.navigate("ChapterOne", {
+      itemId: 36,
+      url: '../audio/gita-chapter-cut-p1.mp3'
+    })}>
         <Text styles={styles.textButton}>Chapter One</Text>
     </TouchableOpacity>
   </View>

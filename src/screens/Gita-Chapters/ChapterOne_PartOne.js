@@ -1,16 +1,20 @@
 import React, { Component } from "react";
 
 // Import your audio file
-
+import chapter1_1 from "./1_1.jpg";
 import song from "../audio/gita-chapter-cut-p1.mp3";
-class ChapterOne_PartOne extends Component {
 
+class ChapterOne_PartOne extends Component {
+  
   state = {
 
     audio: new Audio(song),
 
     isPlaying: false,
   };
+  
+
+  //audio = new Audio(song)
 
   // Main function to handle both play and pause operations
   playPause = () => {
@@ -28,7 +32,6 @@ class ChapterOne_PartOne extends Component {
   };
 
   render() {
-    const {navigation} = this.props;
     
     if (this.state.isPlaying){
       return (
@@ -37,11 +40,12 @@ class ChapterOne_PartOne extends Component {
           <p>
               Song is Playing
           </p>
-  
           {/* Button to call our main function */}
           <button onClick={this.playPause}>
             Pause
           </button>
+          <p></p>
+          <img src = {chapter1_1}/>
         </div>
       );
     } else{
@@ -51,11 +55,12 @@ class ChapterOne_PartOne extends Component {
           <p>
               Song is Paused
           </p>
-  
           {/* Button to call our main function */}
           <button onClick={this.playPause}>
             Play
           </button>
+          <p></p>
+          <img src = {chapter1_1}/>
         </div>
       );
     }
