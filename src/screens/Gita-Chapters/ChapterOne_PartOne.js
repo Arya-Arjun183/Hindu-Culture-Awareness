@@ -1,16 +1,18 @@
 import React, { Component } from "react";
 
 // Import your audio file
-import chapter1_1 from "./1_1.jpg";
 import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
 
 class ChapterOne_PartOne extends Component {
   
+  url = this.props.navigation.getParam('url', 'https://drive.google.com/uc?id=1heYIXcA6ZAmnGhhhszNOr30VXZ0OkPqG&export=download');
+  title = this.props.navigation.getParam('title', 'Error!');
+  images = this.props.navigation.getParam('images', 'error')
+
+
   state = {
-
-    audio: new Audio("https://drive.google.com/uc?id=1heYIXcA6ZAmnGhhhszNOr30VXZ0OkPqG&export=download"),
-
     isPlaying: false,
+    audio: new Audio(this.url),
   };
   
 
@@ -30,20 +32,20 @@ class ChapterOne_PartOne extends Component {
   };
 
   render() {
-    
+    console.log(this.images)
     if (this.state.isPlaying){
       return (
         <div>
           {/* Show state of song on website */}
           <p>
-              Chapter 1, Verses 1-9
+              {this.title}
           </p>
           {/* Button to call our main function */}
           <button onClick={this.playPause}>
             Pause
           </button>
-          <p>(Paused)</p>
-          <img src = {chapter1_1}/>
+          <p>(Playing)</p>
+          <img src = {this.images} alt = "image"/>
         </div>
       );
     } else{
@@ -51,15 +53,16 @@ class ChapterOne_PartOne extends Component {
         <div>
           {/* Show state of song on website */}
           <p style = {{fontStyle:"Georgia"}}>
-            Chapter 1, Verses 1-9
+            {this.title}
           </p>
           {/* Button to call our main function */}
           <button onClick={this.playPause}>
             Play
           </button>
-          <p>(Playing)</p>
-          <img src = {chapter1_1}/>
-          <p>Chapter 1, Verses 1-9</p>
+          <p>(Paused)</p>
+          <img         
+          src={this.images}
+           alt = "image"/>
           <p ></p>
         </div>
       );
