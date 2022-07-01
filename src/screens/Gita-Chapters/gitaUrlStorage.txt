@@ -13,3 +13,8 @@ image8: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictur
 image9: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/Screen%20Shot%202022-06-24%20at%205.19.33%20PM.png",
 
 chapter 1, slokhas 10-20, timing 05:54.4 - 11:46.3 - https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/gita-chapter-1-10-20.mp3
+chapter 1, slokhs 21-30, timing 11:46.3 - 17:39.4 - https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/slokhs_1_20-30.mp3
+chapter 1, slokhs 31-40, timing 17:39.4 - 23:43.2 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/gita-1-31-40/gita-1-31-40.mp3"
+chapter 1, slokhs 41-47, timing 23:43.2 - 27:36.8 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/1_41-47.mp3"
+chapter 2, slokhs 1-10, timing 00:23.3 - 7:15.3 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_1-10.mp3"
+chapter 2, slokhs 11-20, timing 7:15.3 - 13:42.1 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_11-20.mp3"

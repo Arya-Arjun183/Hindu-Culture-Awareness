@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 // Import your audio file
 import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
+import { ScrollView } from "react-native-gesture-handler";
 
 class Gita_Chapter_Template extends Component {
   
@@ -42,14 +43,13 @@ class Gita_Chapter_Template extends Component {
   };
 
   render() {
-    console.log(this.images)
     if (this.state.isPlaying){
       return (
-        <div>
+        <ScrollView>
           {/* Show state of song on website */}
-          <p style = {{fontStyle:"Georgia"}}>
-              {this.title}
-          </p>
+          <Text>
+            {this.title}
+          </Text>
           {/* Button to call our main function */}
           <button onClick={this.playPause}>
             Pause
@@ -66,15 +66,15 @@ class Gita_Chapter_Template extends Component {
           <img src = {this.image9}/>
           <img src = {this.image10}/>
           <img src = {this.image11}/>
-        </div>
+        </ScrollView>
       );
     } else{
       return (
-        <div>
+        <ScrollView>
           {/* Show state of song on website */}
-          <p style = {{fontStyle:"Georgia"}}>
+          <Text style = {{fontStyle:"Georgia"}}>
             {this.title}
-          </p>
+          </Text>
           {/* Button to call our main function */}
           <button onClick={this.playPause}>
             Play
@@ -92,7 +92,7 @@ class Gita_Chapter_Template extends Component {
           <img src = {this.image10}/>
           <img src = {this.image11}/>
           <p ></p>
-        </div>
+        </ScrollView>
       );
     }
   }
