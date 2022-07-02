@@ -1,9 +1,9 @@
 import React from 'react';
-import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
+import { Text, StyleSheet, ScrollView, Button, TouchableOpacity } from 'react-native';
 
 const GitaHomePage = (props) => {
   return (
-  <View>
+  <ScrollView>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
       url: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/slokhs1_1-9.mp3",  
@@ -192,7 +192,7 @@ const GitaHomePage = (props) => {
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
       url: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_62-72.mp3",  
-      title: "Chapter Two - Verses 51-61",
+      title: "Chapter Two - Verses 62-72",
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_62.png",
       image2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_63.png",
       image3: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_64.png",
@@ -204,10 +204,12 @@ const GitaHomePage = (props) => {
       image9: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_70.png",
       image10:"https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_71.png",
       image11:"https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_72.png",
-      })}>
+      }
+    )
+  }>
         <Text style={styles.textButton}>Chapter Two - Verses 62-72</Text>
     </TouchableOpacity>
-  </View>
+  </ScrollView>
   );
 };
 
@@ -220,7 +222,7 @@ const styles = StyleSheet.create({
     color: 'blue',
     margin: 15,
     textAlign:'center',
-    fontFamily:'Georgia',
+    fontFamily:'EB Garamond',
   },
 });
 

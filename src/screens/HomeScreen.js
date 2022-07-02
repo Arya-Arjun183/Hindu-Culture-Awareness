@@ -24,14 +24,14 @@ const HomeScreen = (props) => {
 const styles = StyleSheet.create({
   textTitle: {
     fontSize: 50,
-    fontFamily: 'Georgia',
+    fontFamily:'EB Garamond',
     textAlign:'center',
     margin :20,
   },
   textButton:{
     fontSize: 40,
     color: 'blue',
-    fontFamily: 'Georgia',
+    fontFamily:'EB Garamond',
     textAlign:'center',
     margin :20,
   },

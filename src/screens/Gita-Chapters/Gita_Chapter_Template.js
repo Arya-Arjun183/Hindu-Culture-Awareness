@@ -72,7 +72,7 @@ class Gita_Chapter_Template extends Component {
       return (
         <ScrollView>
           {/* Show state of song on website */}
-          <Text style = {{fontStyle:"Georgia"}}>
+          <Text style = {{fontStyle:"EB Garamond"}}>
             {this.title}
           </Text>
           {/* Button to call our main function */}
