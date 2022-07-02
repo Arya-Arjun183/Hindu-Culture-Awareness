@@ -18,7 +18,7 @@ const Gods_Godesses = (props) =>{
 const styles = StyleSheet.create({
     textStyle:{
         fontSize:50,
-        fontFamily: 'Georgia'
+        fontFamily: 'EB Garamond'
     }
 });
 

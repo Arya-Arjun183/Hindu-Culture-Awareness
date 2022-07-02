@@ -3,10 +3,11 @@ import React, { Component } from "react";
 // Import your audio file
 import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
 import { ScrollView } from "react-native-gesture-handler";
+import { Prompt } from 'react-router';
 
-class Gita_Chapter_Template extends Component {
-  
-  url = this.props.navigation.getParam('url', 'https://drive.google.com/uc?id=1heYIXcA6ZAmnGhhhszNOr30VXZ0OkPqG&export=download');
+class Chapter_Template extends Component {
+
+  audio = this.props.navigation.getParam('url', 'https://drive.google.com/uc?id=1heYIXcA6ZAmnGhhhszNOr30VXZ0OkPqG&export=download');
   title = this.props.navigation.getParam('title', 'Error!');
 
   image1 = this.props.navigation.getParam('image1', 'error');
@@ -23,7 +24,7 @@ class Gita_Chapter_Template extends Component {
 
   state = {
     isPlaying: false,
-    audio: new Audio(this.url),
+    audio: new Audio(this.audio),
   };
   
 
@@ -37,24 +38,22 @@ class Gita_Chapter_Template extends Component {
     } else {
       this.state.audio.play();
     }
-
     // Change the state of song
     this.setState({ isPlaying: !isPlaying });
   };
-
   render() {
     if (this.state.isPlaying){
       return (
         <ScrollView>
           {/* Show state of song on website */}
-          <Text>
+          <Text style = {{fontStyle:"EB Garamond"}}>
             {this.title}
           </Text>
           {/* Button to call our main function */}
           <button onClick={this.playPause}>
             Pause
           </button>
-          <p>(Playing)</p>
+          <p>(Playing) - If exiting, please pause before doing so.</p>
           <img src = {this.image1}/>
           <img src = {this.image2}/>
           <img src = {this.image3}/>
@@ -98,4 +97,4 @@ class Gita_Chapter_Template extends Component {
   }
 }
 
-export default Gita_Chapter_Template;
+export default Chapter_Template;
