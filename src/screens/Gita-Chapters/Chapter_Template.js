@@ -9,7 +9,7 @@ class Chapter_Template extends Component {
 
   audio1 = this.props.navigation.getParam('url1', 'https://drive.google.com/uc?id=1heYIXcA6ZAmnGhhhszNOr30VXZ0OkPqG&export=download');
   title = this.props.navigation.getParam('title', 'Error!');
-  audio2 = this.props.navigate.getParam('url2','https://drive.google.com/uc?id=1heYIXcA6ZAmnGhhhszNOr30VXZ0OkPqG&export=download');
+  audio2 = this.props.navigation.getParam('url2','https://drive.google.com/uc?id=1heYIXcA6ZAmnGhhhszNOr30VXZ0OkPqG&export=download');
   image1 = this.props.navigation.getParam('image1', 'error');
   image2 = this.props.navigation.getParam('image2', 'error');
   image3 = this.props.navigation.getParam('image3', 'error');
