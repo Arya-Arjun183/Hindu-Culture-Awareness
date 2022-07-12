@@ -3,7 +3,7 @@ import React, { Component } from "react";
 // Import your audio file
 import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
 import { ScrollView } from "react-native-gesture-handler";
-import { Prompt } from 'react-router';
+
 
 class Chapter_Template extends Component {
 
@@ -30,7 +30,16 @@ class Chapter_Template extends Component {
     audio2:new Audio(this.audio2),
   };
   
-
+  stopAudio1 = ()=>{
+    this.state.audio1.pause();
+    this.state.audio1.currentTime = 0;
+    this.state.isPlaying1 = false;
+  }
+  stopAudio2 = ()=>{
+    this.state.audio2.pause();
+    this.state.audio2.currentTime = 0;
+    this.state.isPlaying2 = false;
+  }
   // Main function to handle both play and pause operations
   playPauseButton1 = () => {
 
@@ -65,7 +74,10 @@ class Chapter_Template extends Component {
           </Text>
           {/* Button to call our main function */}
           <button onClick={this.playPauseButton1}>
-            Play|Pause
+            Play|Pause - Part One
+          </button>
+          <button onClick={this.stopAudio1}>
+            Stop Part One
           </button>
           <img src = {this.image1}/>
           <img src = {this.image2}/>
@@ -73,7 +85,10 @@ class Chapter_Template extends Component {
           <img src = {this.image4}/>
           <img src = {this.image5}/>
           <button onClick={this.playPauseButton2}>
-            Play|Pause
+            Play|Pause - Part Two
+          </button>
+          <button onClick={this.stopAudio2}>
+            Stop Part Two
           </button>
           <img src = {this.image6}/>
           <img src = {this.image7}/>
