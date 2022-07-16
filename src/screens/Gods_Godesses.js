@@ -14,7 +14,6 @@ const Gods_Godesses = (props) =>{
         </View>
     );
 };
-
 const styles = StyleSheet.create({
     textStyle:{
         fontSize:50,

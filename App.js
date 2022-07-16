@@ -5,7 +5,7 @@ import Verses_Translations from "./src/screens/Verses_Translations";
 import Gods_Godesses from "./src/screens/Gods_Godesses";
 import Festivals from "./src/screens/Festivals";
 import GitaHomePage from "./src/screens/GitaHomePage";
-import Chapter_Template from "./src/screens/Gita-Chapters/Chapter_Template";
+import Chapter_Template from "./src/screens/Chapter_Template";
 import Vishnu from "./src/screens/Gods_Godesses_SubPages/Vishnu";
 
 const navigator = createStackNavigator(

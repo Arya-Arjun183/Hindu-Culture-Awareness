@@ -1,0 +1,102 @@
+ita Sanskrit - https://www.gitasupersite.iitk.ac.in/srimad?language=ro&field_chapter_value=1&field_nsutra_value=9
+
+chapter 1 , slokhas 1-9, timing 00:46.8-05:54.4 - https://drive.google.com/uc?id=1heYIXcA6ZAmnGhhhszNOr30VXZ0OkPqG&export=download
+
+image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/1_1.jpeg",
+image2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/Screen%20Shot%202022-06-24%20at%205.17.46%20PM.png",
+image3: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/Screen%20Shot%202022-06-24%20at%205.18.02%20PM.png",
+image4: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/Screen%20Shot%202022-06-24%20at%205.18.18%20PM.png",
+image5: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/Screen%20Shot%202022-06-24%20at%205.18.35%20PM.png",
+image6: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/Screen%20Shot%202022-06-24%20at%205.18.53%20PM.png",
+image7: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/Screen%20Shot%202022-06-24%20at%205.19.06%20PM.png",
+image8: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/Screen%20Shot%202022-06-24%20at%205.19.20%20PM.png",
+image9: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/Screen%20Shot%202022-06-24%20at%205.19.33%20PM.png",
+
+chapter 1, slokhas 10-20, timing 05:54.4 - 11:46.3 - https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/gita-chapter-1-10-20.mp3
+chapter 1, slokhs 21-30, timing 11:46.3 - 17:39.4 - https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/slokhs_1_20-30.mp3
+chapter 1, slokhs 31-40, timing 17:39.4 - 23:43.2 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/gita-1-31-40/gita-1-31-40.mp3"
+chapter 1, slokhs 41-47, timing 23:43.2 - 27:36.8 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/1_41-47.mp3"
+chapter 2, slokhs 1-10, timing 00:23.3 - 7:15.3 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_1-10.mp3"
+chapter 2, slokhs 11-20, timing 7:15.3 - 13:42.1 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_11-20.mp3"
+chapter 2, slokhs 21-30, timing 13:42.1 - 20:14.9 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_21-30.mp3"
+chapter 2, slokhs 31-40, timing 20:14.9 - 26:34.9- "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_31-40.mp3"
+chapter 2, slokhs 41-50, timing 26:34.9 - 32:40.8 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_41-50.mp3"
+chapter 2, slokhs 51-61, timing 32:40.8 - 39:52.6 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_51-61.mp3"
+chapter 2, slokhs 62-72, timing 39:52.6 - END - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_62-72.mp3"
+chapter 3, slokhs 1-10, timing 0:00 - 6:30 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_1-10.mp3"
+chapter 3, slokhs 10-21, timing 06:30.1 - 13:50.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_11-21.mp3"
+chapter 3, slokhs 22-32, timing 13:50.1 - 21:15.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3/3_21-32.mp3"
+chapter 3, slokhs 33-43, timing 21:15.1 - 29:07.3 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_33-43.mp3"
+
+chapter 2, slokhs 1-5, timing 00:00.00 - 03:15.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_1-5.mp3"
+chapter 2, slokhs 6-10, timing 03:15.1 - 06:52.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_6-10.mp3"
+chapter 2, slokhs 11-15, timing 0:00.0 - 03:30.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_11-15.mp3"
+chapter 2, slokhs 16-20, timing 03:30.1 - 06:26.8 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_16-20.mp3"
+chapter 2, slokhs 21-25, timing 00:00.0 - 03:30.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_21-25.mp3"
+chapter 2, slokhs 26-30, timing 03:30.1 - 06:32.8 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_26-30.mp3"
+chapter 2, slokhs 31-35, timing 00:00.0 - 03:00.0- "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_31-35.mp3"
+chapter 2, slokhs 36-40, timing 03:00.1 - 06:19.5- "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_36-40.mp3"
+chapter 2, slokhs 41-45, timing 00:00.0 - 03:00.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_41-45.mp3"
+chapter 2, slokhs 46-50, timing 03:00.1 - 06:05.9 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_46-50.mp3"
+chapter 2, slokhs 51-55, timing 00:00.0 - 03:20.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_51-61.mp3"
+chapter 2, slokhs 56-61, timing 03:20.1 - 39:52.6 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_51-61.mp3"
+chapter 2, slokhs 62-6672, timing 00:00.0 - 03:15.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_62-66.mp3"
+chapter 2, slokhs 62-72, timing 03:15.1 - END - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_67-72.mp3"
+
+chapter 3, slokhs 1-5, timing 0:00 - 3:30 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_1-5.mp3"
+chapter 3, slokhs 6-10, timing 3:30.1 - 6:30 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_6-10.mp3"
+chapter 3, slokhs 10-15, timing 00:00.0 - 03:30.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_11-15.mp3"
+chapter 3, slokhs 16-21, timing 03:30.1 - 07:19.9 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_16-21.mp3"
+chapter 3, slokhs 22-26, timing 00:00.0 - 03:20.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3/3_22-26.mp3"
+chapter 3, slokhs 27-32, timing 03:20.1 - 07:24.9 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3/3_27-32.mp3"
+chapter 3, slokhs 33-37, timing 00:00.0 - 03:30.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_33-37.mp3"
+chapter 3, slokhs 38-43, timing 03:30.1 - 07:52.2 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_38-43.mp3"
+
+chapter 4, slokhs 1-5, timing 0:00 - 03:40.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_1-5.mp3"
+chapter 4, slokhs 6-10, timing 03:40.1 - 06:45.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_6-10.mp3"
+chapter 4, slokhs 11-15, timing 06:45.1 - 10:00.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_11-15.mp3"
+chapter 4, slokhs 16-21, timing 10:00.1 - 13:50.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_16-21.mp3"
+chapter 4, slokhs 22-26, timing 13:50.1 - 17:40.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_22-26.mp3"
+chapter 4, slokhs 27-32, timing 17:40.1 - 21:40.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_27-32.mp3"
+chapter 4, slokhs 33-37, timing 21:40.1 - 24:50.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_33-37.mp3"
+chapter 4, slokhs 38-42, timing 24:50.1 - 28:49.8 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_38-42.mp3"
+
+chapter 5, slokhs 1-5, timing 0:00 - 04:00.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/5_1-5.mp3"
+chapter 5, slokhs 6-10, timing 04:00.1 - 07:20.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/5_6-10.mp3"
+chapter 5, slokhs 11-15, timing 07:20.1 - 10:30.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/5_11-15.mp3"
+chapter 5, slokhs 16-20, timing 10:30.1 - 13:50.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/5_16-20.mp3"
+chapter 5, slokhs 21-25, timing 13:50.1 - 17:30.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/5_21-25.mp3"
+chapter 5, slokhs 26-29, timing 17:30.1 - 20:50.4 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/5_26-29.mp3"
+
+chapter 6, slokhs 1-5, timing 0:00 - 03:45.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_1-5.mp3"
+chapter 6, slokhs 6-10, timing 03:45.1 - 07:15.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_6-10.mp3"
+chapter 6, slokhs 11-15, timing 07:15.1 - 10:20.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_11-15.mp3"
+chapter 6, slokhs 16-20, timing 10:20.1 - 13:29.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_16-20.mp3"
+chapter 6, slokhs 21-25, timing 13:29.1 - 16:50.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_21-25.mp3"
+chapter 6, slokhs 26-30, timing 16:50.1 - 20:00.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_26-30.mp3"
+chapter 6, slokhs 31-35, timing 20:00.1 - 23:00.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_31-35.mp3"
+chapter 6, slokhs 36-40, timing 23:00.1 - 26:10.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_36-40.mp3"
+chapter 6, slokhs 41-45, timing 26:10.1 - 29:30.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_41-45.mp3"
+chapter 6, slokhs 46-47, timing 29:30.1 - 31:30.2 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_46-47.mp3"
+
+chapter 7, slokhs 1-5, timing 0:00 - 03:40.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/7_1-5.mp3"
+chapter 7, slokhs 6-10, timing 03:40.1 - 07:00.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/7_6-10.mp3"
+chapter 7, slokhs 11-15, timing 07:00.1 - 10:10.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/7_11-15.mp3"
+chapter 7, slokhs 16-20, timing 10:10.1 - 13:45.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/7_16-20.mp3"
+chapter 7, slokhs 21-25, timing 13:45.1 - 17:15.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/7_21-25.mp3"
+chapter 7, slokhs 26-30, timing 17:15.1 - 21:20.3 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/7_26-30.mp3"
+
+chapter 8, slokhs 1-5, timing 0:00 - 04:00.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/8_1-5.mp3"
+chapter 8, slokhs 6-10, timing 04:00.1 - 07:45.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/8_6-10.mp3"
+chapter 8, slokhs 11-15, timing 07:45.1 - 11:20.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/8_11-15.mp3"
+chapter 8, slokhs 16-20, timing 11:20.1 - 14:10.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/8_16-20.mp3"
+chapter 8, slokhs 21-25, timing 14:10.1 - 17:35.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/8_21-25.mp3"
+chapter 8, slokhs 26-30, timing 17:35.1 - 20:14.2 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/8_26-30.mp3"
+
+chapter 9, slokhs 1-5, timing 0:00 - 03:45.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/9_1-5.mp3"
+chapter 9, slokhs 6-10, timing 03:45.1 - 07:00.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/9_6-10.mp3"
+chapter 9, slokhs 11-15, timing 07:00.1 - 10:25.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/9_11-15.mp3"
+chapter 9, slokhs 16-20, timing 10:25.1 - 14:10.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/9_16-20.mp3"
+chapter 9, slokhs 21-25, timing 14:10.1 - 18:25.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/9_21-25.mp3"
+chapter 9, slokhs 26-30, timing 18:25.1 - 21:55.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/9_26-30.mp3"
+chapter 9, slokhs 31-34, timing 21:55.1 - 24:59.9 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/9_31-34.mp3"

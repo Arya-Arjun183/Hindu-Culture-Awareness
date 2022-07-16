@@ -3,8 +3,8 @@ import React, { Component } from "react";
 // Import your audio file
 import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
 import { ScrollView } from "react-native-gesture-handler";
-
-
+import play from './icons/play-icon.jpg';
+import stop from './icons/stop-icon.jpg';
 class Chapter_Template extends Component {
 
   audio1 = this.props.navigation.getParam('url1', 'https://drive.google.com/uc?id=1heYIXcA6ZAmnGhhhszNOr30VXZ0OkPqG&export=download');
@@ -34,11 +34,13 @@ class Chapter_Template extends Component {
     this.state.audio1.pause();
     this.state.audio1.currentTime = 0;
     this.state.isPlaying1 = false;
+
   }
   stopAudio2 = ()=>{
     this.state.audio2.pause();
     this.state.audio2.currentTime = 0;
     this.state.isPlaying2 = false;
+
   }
   // Main function to handle both play and pause operations
   playPauseButton1 = () => {
@@ -73,22 +75,22 @@ class Chapter_Template extends Component {
             {this.title}
           </Text>
           {/* Button to call our main function */}
-          <button onClick={this.playPauseButton1}>
-            Play|Pause - Part One
+          <button>
+          <img src={play} width={50} height={50} onClick={this.playPauseButton1}/>
           </button>
-          <button onClick={this.stopAudio1}>
-            Stop Part One
+          <button>
+          <img src={stop} width={50} height={50} onClick={this.stopAudio1}/>
           </button>
           <img src = {this.image1}/>
           <img src = {this.image2}/>
           <img src = {this.image3}/>
           <img src = {this.image4}/>
           <img src = {this.image5}/>
-          <button onClick={this.playPauseButton2}>
-            Play|Pause - Part Two
+          <button>
+          <img src={play} width={50} height={50} onClick={this.playPauseButton2}/>
           </button>
-          <button onClick={this.stopAudio2}>
-            Stop Part Two
+          <button>
+          <img src={stop} width={50} height={50} onClick={this.stopAudio2}/>
           </button>
           <img src = {this.image6}/>
           <img src = {this.image7}/>
