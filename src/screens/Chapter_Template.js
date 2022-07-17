@@ -76,10 +76,8 @@ class Chapter_Template extends Component {
           </Text>
           {/* Button to call our main function */}
           <button>
-          <img src={play} width={50} height={50} onClick={this.playPauseButton1}/>
-          </button>
-          <button>
-          <img src={stop} width={50} height={50} onClick={this.stopAudio1}/>
+            <img src={play} width={50} height={50} onClick={this.playPauseButton1}/>
+            <img src={stop} width={50} height={50} onClick={this.stopAudio1}/>
           </button>
           <img src = {this.image1}/>
           <img src = {this.image2}/>
@@ -88,8 +86,6 @@ class Chapter_Template extends Component {
           <img src = {this.image5}/>
           <button>
           <img src={play} width={50} height={50} onClick={this.playPauseButton2}/>
-          </button>
-          <button>
           <img src={stop} width={50} height={50} onClick={this.stopAudio2}/>
           </button>
           <img src = {this.image6}/>
