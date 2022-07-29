@@ -6,7 +6,7 @@ const Verses_Translations = (props) => {
     <View style = {{justifyContent:'center'}}>
         <TouchableOpacity onPress={() => props.navigation.navigate("GitaHomePage")}>
             <Text style = {styles.mainStyle}>Gita Home Page</Text>
-            <img 
+            <img
             src={gita} 
             width={300} height={180}
             />

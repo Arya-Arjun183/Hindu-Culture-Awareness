@@ -96,7 +96,7 @@ class Chapter_Template extends Component {
           <img src = {this.image11}/>
         </ScrollView>
       );
-    }
-}
 
+  }
+}
 export default Chapter_Template;

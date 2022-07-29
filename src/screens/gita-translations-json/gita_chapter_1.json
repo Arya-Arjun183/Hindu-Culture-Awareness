@@ -9,18 +9,6 @@
     "word_meanings": "dhṛitarāśhtraḥ uvācha—Dhritarashtra said; dharma-kṣhetre—the land of dharma; kuru-kṣhetre—at Kurukshetra; samavetāḥ—having gathered; yuyutsavaḥ—desiring to fight; māmakāḥ—my sons; pāṇḍavāḥ—the sons of Pandu; cha—and; eva—certainly; kim—what; akurvata—did they do; sañjaya—Sanjay\n",
     "translations": [
       {
-        "id": 3,
-        "description": "1.1 Dhrtarastra said  On the holy field of Kuruksetra, gathered together eager for battle, what did my people and the Pandavas do, O Sanjaya? \n\n",
-        "author_name": "Swami Adidevananda",
-        "language": "english"
-      },
-      {
-        "id": 4,
-        "description": "\n1.1. Dhrtarastra said  O Sanjaya, what did my sons (and others) and Pandu's sons (and others) actually do when, eager for battle, they assembled on the sacred field, the Kuruksetra (Field of the Kurus)? \n\n",
-        "author_name": "Swami Gambirananda",
-        "language": "english"
-      },
-      {
         "id": 1,
         "description": "।।1.1।। धृतराष्ट्र बोले (टिप्पणी प0 1.2) - हे संजय! (टिप्पणी प0 1.3) धर्मभूमि कुरुक्षेत्र में युद्ध की इच्छा से इकट्ठे हुए मेरेे और पाण्डु के पुत्रों ने भी क्या किया?\n ",
         "author_name": "Swami Ramsukhdas",
@@ -31,6 +19,18 @@
         "description": "\n\n।।1.1।।धृतराष्ट्र ने कहा -- हे संजय ! धर्मभूमि कुरुक्षेत्र में एकत्र हुए युद्ध के इच्छुक (युयुत्सव:) मेरे और पाण्डु के पुत्रों ने क्या किया?\n\n\n\n\n ",
         "author_name": "Swami Tejomayananda",
         "language": "hindi"
+      },
+      {
+        "id": 3,
+        "description": "1.1 Dhrtarastra said  On the holy field of Kuruksetra, gathered together eager for battle, what did my people and the Pandavas do, O Sanjaya? \n\n",
+        "author_name": "Swami Adidevananda",
+        "language": "english"
+      },
+      {
+        "id": 4,
+        "description": "\n1.1. Dhrtarastra said  O Sanjaya, what did my sons (and others) and Pandu's sons (and others) actually do when, eager for battle, they assembled on the sacred field, the Kuruksetra (Field of the Kurus)? \n\n",
+        "author_name": "Swami Gambirananda",
+        "language": "english"
       },
       {
         "id": 5,
