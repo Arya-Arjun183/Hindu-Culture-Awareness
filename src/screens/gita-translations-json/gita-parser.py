@@ -7,7 +7,7 @@
 # import urllib.parse
 # import urllib.request
 # headers = {
-# 		"X-RapidAPI-Key": "86e9e632afmshfda022347ad0052p10ae0ejsnb8817b74a4d5",
+# 		"X-RapidAPI-Key": "insert key here",
 # 		"X-RapidAPI-Host": "bhagavad-gita3.p.rapidapi.com"
 # }
 # url = "https://bhagavad-gita3.p.rapidapi.com/v2/chapters/{chapter}/verses/".format(chapter=1)
