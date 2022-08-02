@@ -5,6 +5,7 @@ import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
 import { ScrollView } from "react-native-gesture-handler";
 import play from './icons/play-icon.jpg';
 import stop from './icons/stop-icon.jpg';
+import jsonStuff from './gita-verses/chapter-1/gita_chapter_1_verse_1.json';
 class Chapter_Template extends Component {
 
   audio1 = this.props.navigation.getParam('url1', 'https://drive.google.com/uc?id=1heYIXcA6ZAmnGhhhszNOr30VXZ0OkPqG&export=download');
@@ -21,7 +22,6 @@ class Chapter_Template extends Component {
   image9 = this.props.navigation.getParam('image9', 'error');
   image10 = this.props.navigation.getParam('image10', 'error');
   image11 = this.props.navigation.getParam('image11', 'error');
-
   
   state = {
     isPlaying1: false,
@@ -80,6 +80,9 @@ class Chapter_Template extends Component {
             <img src={stop} width={50} height={50} onClick={this.stopAudio1}/>
           </button>
           <img src = {this.image1}/>
+          <Text style = {styles.textStyle}>
+            {jsonStuff.text}
+          </Text>
           <img src = {this.image2}/>
           <img src = {this.image3}/>
           <img src = {this.image4}/>
@@ -99,4 +102,10 @@ class Chapter_Template extends Component {
 
   }
 }
+const styles = StyleSheet.create({
+  textStyle:{
+      fontSize:20,
+      fontFamily: 'EB Garamond'
+  }
+});
 export default Chapter_Template;
