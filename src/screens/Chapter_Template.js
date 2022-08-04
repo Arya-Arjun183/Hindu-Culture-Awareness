@@ -7,7 +7,6 @@ import play from './icons/play-icon.jpg';
 import stop from './icons/stop-icon.jpg';
 import jsonStuff from './gita-verses/chapter-1/gita_chapter_1_verse_1.json';
 class Chapter_Template extends Component {
-
   audio1 = this.props.navigation.getParam('url1', 'https://drive.google.com/uc?id=1heYIXcA6ZAmnGhhhszNOr30VXZ0OkPqG&export=download');
   title = this.props.navigation.getParam('title', 'Error!');
   audio2 = this.props.navigation.getParam('url2','https://drive.google.com/uc?id=1heYIXcA6ZAmnGhhhszNOr30VXZ0OkPqG&export=download');
@@ -22,7 +21,7 @@ class Chapter_Template extends Component {
   image9 = this.props.navigation.getParam('image9', 'error');
   image10 = this.props.navigation.getParam('image10', 'error');
   image11 = this.props.navigation.getParam('image11', 'error');
-  
+  textTest = this.props.navigation.getParam('text', 'error!');
   state = {
     isPlaying1: false,
     isPlaying2:false,
@@ -67,6 +66,7 @@ class Chapter_Template extends Component {
     // Change the state of song
     this.setState({ isPlaying2: !isPlaying2 });
   };
+  data = JSON.parse(this.textTest);
   render() {
       return (
         <ScrollView>
@@ -81,7 +81,7 @@ class Chapter_Template extends Component {
           </button>
           <img src = {this.image1}/>
           <Text style = {styles.textStyle}>
-            {jsonStuff.text}
+            {this.data.text}
           </Text>
           <img src = {this.image2}/>
           <img src = {this.image3}/>
