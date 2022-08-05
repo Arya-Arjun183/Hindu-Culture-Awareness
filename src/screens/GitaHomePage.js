@@ -6,6 +6,8 @@ const GitaHomePage = (props) => {
   <ScrollView>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+      chapter:1,
+      verse:1,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/1_1-5.mp3",  
       title: "Chapter One Verses 1-10",
       text: './gita-verses/chapter-1/gita_chapter_1_verse_1.json',
@@ -25,6 +27,8 @@ const GitaHomePage = (props) => {
       </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+      chapter:1,
+      verse:11,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/1_11-15.mp3",  
       title: "Chapter One Verses 11-20",
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/1-10-20/Screen%20Shot%202022-06-24%20at%206.02.07%20PM.png",
@@ -43,6 +47,8 @@ const GitaHomePage = (props) => {
     </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+      chapter:1,
+      verse:21,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/1_21-25.mp3",  
       title: "Chapter One Verses 21-30",
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/1-20-30/Screen%20Shot%202022-06-24%20at%207.37.00%20PM.png",
@@ -61,6 +67,8 @@ const GitaHomePage = (props) => {
     </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+      chapter:1,
+      verse:31,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/1-31-35.mp3",  
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/1-36-40.mp3",  
       title: "Chapter One - Verses 31-40",
@@ -80,6 +88,8 @@ const GitaHomePage = (props) => {
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/1_41-45.mp3",  
+      chapter:1,
+      verse:41,
       title: "Chapter One - Verses 41-47",
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/1-41-47/1_41.png",
       image2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/1-41-47/1_42.png",
@@ -96,7 +106,9 @@ const GitaHomePage = (props) => {
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_1-5.mp3",  
-      url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_6-10.mp3",  
+      url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_6-10.mp3",
+      chapter:2,
+      verse:1,
       title: "Chapter Two - Verses 1-10",
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_1.png",
       image2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_2.png",
@@ -114,6 +126,8 @@ const GitaHomePage = (props) => {
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_11-15.mp3", 
+      chapter:2,
+      verse:11,
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_16-20.mp3",  
       title: "Chapter Two - Verses 11-20",
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_11.png",
@@ -134,6 +148,8 @@ const GitaHomePage = (props) => {
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_21-25.mp3",  
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_26-30.mp3",  
       title: "Chapter Two - Verses 21-30",
+      chapter:2,
+      verse:21,
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_21.png",
       image2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_22.png",
       image3: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_23.png",
@@ -152,6 +168,8 @@ const GitaHomePage = (props) => {
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_31-35.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_36-40.mp3",  
       title: "Chapter Two - Verses 31-40",
+      chapter:2,
+      verse:31,
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_31.png",
       image2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_32.png",
       image3: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_33.png",
@@ -170,6 +188,8 @@ const GitaHomePage = (props) => {
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_41-45.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_46-50.mp3",  
       title: "Chapter Two - Verses 41-50",
+      chapter:2,
+      verse:41,
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_41.png",
       image2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_42.png",
       image3: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_43.png",
@@ -185,9 +205,13 @@ const GitaHomePage = (props) => {
     </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
-      url: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_51-55.mp3",
-      url: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_56-61.mp3",  
+      chapter:2,
+      verse:51,
+      url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_51-55.mp3",
+      url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_56-61.mp3",  
       title: "Chapter Two - Verses 51-61",
+      chapter:2,
+      verse:51,
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_51.png",
       image2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_52.png",
       image3: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_53.png",
@@ -207,6 +231,8 @@ const GitaHomePage = (props) => {
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_62-66.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_67-72.mp3",  
       title: "Chapter Two - Verses 62-72",
+      chapter:2,
+      verse:62,
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_62.png",
       image2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_63.png",
       image3: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_64.png",
