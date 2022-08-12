@@ -1,4 +1,4 @@
-Gita Sanskrit - https://www.gitasupersite.iitk.ac.in/srimad?language=ro&field_chapter_value=1&field_nsutra_value=9
+ita Sanskrit - https://www.gitasupersite.iitk.ac.in/srimad?language=ro&field_chapter_value=1&field_nsutra_value=9
 
 chapter 1 , slokhas 1-9, timing 00:46.8-05:54.4 - https://drive.google.com/uc?id=1heYIXcA6ZAmnGhhhszNOr30VXZ0OkPqG&export=download
 
@@ -42,7 +42,7 @@ chapter 2, slokhs 16-20, timing 03:30.1 - 06:26.8 - "https://github.com/Arya-Arj
 chapter 2, slokhs 21-25, timing 00:00.0 - 03:30.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_21-25.mp3"
 chapter 2, slokhs 26-30, timing 03:30.1 - 06:32.8 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_26-30.mp3"
 chapter 2, slokhs 31-35, timing 00:00.0 - 03:00.0- "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_31-35.mp3"
-chapter 2, slokhs 31-40, timing 03:00.1 - 06:19.5- "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_36-40.mp3"
+chapter 2, slokhs 36-40, timing 03:00.1 - 06:19.5- "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_36-40.mp3"
 chapter 2, slokhs 41-45, timing 00:00.0 - 03:00.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_41-45.mp3"
 chapter 2, slokhs 46-50, timing 03:00.1 - 06:05.9 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_46-50.mp3"
 chapter 2, slokhs 51-55, timing 00:00.0 - 03:20.0 - "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_51-61.mp3"
