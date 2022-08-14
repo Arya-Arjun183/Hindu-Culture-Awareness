@@ -6,7 +6,7 @@ const HomeScreen = (props) => {
   console.log(props);
   return (
   <View>
-    <Text style={styles.textTitle}>Welcome to the app!</Text>
+    <Text style={styles.textTitle}>Welcome to the Hindu Culture app!</Text>
     <TouchableOpacity
     onPress={() => props.navigation.navigate("Gods_Godesses")}>
       <Text style={styles.textButton}>Gods and Godesses</Text>

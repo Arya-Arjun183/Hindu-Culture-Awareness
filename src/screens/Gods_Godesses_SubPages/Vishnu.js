@@ -88,14 +88,14 @@ const styles = StyleSheet.create({
   titleStyle: {
     fontSize: 80,
     textAlign: 'center',
-    fontFamily: 'Georgia'
+    fontFamily: 'Georgia',
+    color: 'blue',
   },
   textStyle:{
     margin: 10,
     fontFamily: 'Georgia',
     fontSize: 30,
   }
-
 });
 
 export default Vishnu;
