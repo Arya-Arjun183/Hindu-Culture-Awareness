@@ -12,7 +12,9 @@ const Festivals = (props) => {
   const styles = StyleSheet.create({
     text: {
       fontSize: 30,
-      fontFamily: 'Georgia'
+      fontFamily: 'Georgia',
+      textAlign: 'center',
+      color: 'blue',
     },
   });
   

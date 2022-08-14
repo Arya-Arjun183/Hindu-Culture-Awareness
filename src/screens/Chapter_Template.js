@@ -14,7 +14,11 @@ import chapter4 from './gita-translations-json/gita_translations_4.json';
 import chapter5 from './gita-translations-json/gita_translations_5.json';
 import chapter6 from './gita-translations-json/gita_translations_6.json';
 import chapter7 from './gita-translations-json/gita_translations_7.json';
+
+const ENGLISH_TRANSLATION_HEADER = 'English Translation: \n';
+
 class Chapter_Template extends Component {
+
 	audio1 = this.props.navigation.getParam('url1', 'https://drive.google.com/uc?id=1heYIXcA6ZAmnGhhhszNOr30VXZ0OkPqG&export=download');
 	title = this.props.navigation.getParam('title', 'Error!');
 	audio2 = this.props.navigation.getParam('url2','https://drive.google.com/uc?id=1heYIXcA6ZAmnGhhhszNOr30VXZ0OkPqG&export=download');
@@ -64,8 +68,10 @@ class Chapter_Template extends Component {
 		}
 		this.keyToFind = chapter+"."+verse;
 		this.translation = this.mainFile[this.keyToFind];
+		
 		return this.translation;
-}
+	}
+
 	stopAudio2 = ()=>{
 		this.state.audio2.pause();
 		this.state.audio2.currentTime = 0;
@@ -100,9 +106,10 @@ class Chapter_Template extends Component {
 		render() {
 			if (this.image11=='error'){
 				return (
-					<ScrollView>
+					<ScrollView style={styles.container}>
 						{/* Show state of song on website */}
-						<Text style = {{fontStyle:"EB Garamond"}}>
+						
+						<Text style = {styles.textStyleHeader}>
 							{this.title}
 						</Text>
 						{/* <button>
@@ -118,46 +125,58 @@ class Chapter_Template extends Component {
 						</button>
 						<img src = {this.image1}/>
 						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse)}
 						</Text>
 						<img src = {this.image2}/>
 						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+1)}
 						</Text>
 						<img src = {this.image3}/>
 						<Text style = {styles.textStyle}>
+						<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+2)}
 						</Text>
 						<img src = {this.image4}/>
 						<Text style = {styles.textStyle}>
+						<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+3)}
 						</Text>
 						<img src = {this.image5}/>
 						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+4)}
 						</Text>
+						<Text style={styles.textStyleHeader}>{this.title}</Text>
+						
 						<button>
 						<img src={play} width={50} height={50} onClick={this.playPauseButton2}/>
 						<img src={stop} width={50} height={50} onClick={this.stopAudio2}/>
 						</button>
 						<img src = {this.image6}/>
 						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+5)}
 						</Text>
 						<img src = {this.image7}/>
 						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+6)}
 						</Text>
 						<img src = {this.image8}/>
 						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+7)}
 						</Text>
 						<img src = {this.image9}/>
 						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+8)}
 						</Text>
 						<img src = {this.image10}/>
 						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+9)}
 						</Text>
 					</ScrollView>
@@ -176,22 +195,27 @@ class Chapter_Template extends Component {
 						</button>
 						<img src = {this.image1}/>
 						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse)}
 						</Text>
 						<img src = {this.image2}/>
 						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+1)}
 						</Text>
 						<img src = {this.image3}/>
 						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+2)}
 						</Text>
 						<img src = {this.image4}/>
 						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+3)}
 						</Text>
 						<img src = {this.image5}/>
 						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+4)}
 						</Text>
 						<button>
@@ -200,26 +224,32 @@ class Chapter_Template extends Component {
 						</button>
 						<img src = {this.image6}/>
 						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+5)}
 						</Text>
 						<img src = {this.image7}/>
 						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+6)}
 						</Text>
 						<img src = {this.image8}/>
 						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+7)}
 						</Text>
 						<img src = {this.image9}/>
 						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+8)}
 						</Text>
 						<img src = {this.image10}/>
 						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+9)}
 						</Text>
 						<img src = {this.image11}/>
 						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+10)}
 						</Text>
 					</ScrollView>
@@ -230,8 +260,44 @@ class Chapter_Template extends Component {
 }
 const styles = StyleSheet.create({
 	textStyle:{
-			fontSize:20,
-			fontFamily: 'EB Garamond'
+			fontSize:25,
+			fontFamily: 'EB Garamond',
+			backgroundColor: 'white',
+			justifyContent: 'space-between',
+			flex:1,
+			marginTop:5,
+			marginBottom: 5,
+			marginLeft: 5,
+			marginRight: 5,
+			paddingVertical: 30,
+			paddingStart: 5,
+			paddingEnd: 10,
+			paddingHorizontal: 30,
+			borderWidth: 2,
+    		borderColor: "grey",
+    		borderRadius: 0.5,
+			textAlign:'center',
+			fontStyle: 'italic',
+	},
+	textStyleHeader:{
+		color: 'blue',
+		fontFamily: 'EB Garamond',
+		justifyContent: 'space-between',
+		flex:1,
+		fontSize: 40,
+    	margin: 15,
+    	textAlign:'center',
+	},
+	textStyleSmall:{
+		fontFamily: 'EB Garamond',
+		justifyContent: 'space-between',
+		flex:1,
+		fontSize: 20,
+		textAlign: 'center',
+		fontStyle: 'italic',
+		fontWeight: 'bold',
+		underline: {textDecorationLine: 'underline'},
+		color: 'blue',
 	}
 });
 export default Chapter_Template;

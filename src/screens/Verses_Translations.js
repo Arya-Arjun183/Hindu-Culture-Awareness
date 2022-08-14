@@ -1,21 +1,39 @@
 import React from 'react';
 import { Text, StyleSheet, View, TouchableOpacity, Image} from 'react-native';
-import gita from './icons/gita-icon.jpeg';
+const gita = require('./icons/gita-icon.jpeg');
+
 const Verses_Translations = (props) => {
     return (
-    <View style = {{justifyContent:'center'}}>
+    <View style = {{justifyContent:'center',alignItems: 'center'}}>
         <TouchableOpacity onPress={() => props.navigation.navigate("GitaHomePage")}>
             <Text style = {styles.mainStyle}>Gita Home Page</Text>
-            <img src={gita} width={300} height={180}></img>
+            <Image 
+            style={{
+            resizeMode: "stretch",
+            flex: 1, 
+            alignContent: 'center',
+            height: 400,
+            width: 400,
+            borderWidth: 1,
+            borderRadius: 0
+            }}
+          source={gita}
+        />
         </TouchableOpacity>
     </View>
     );
 };
 
 const styles = StyleSheet.create({
+    container: {
+        justifyContent: 'center',
+        alignItems: 'center',
+      },
     mainStyle: {
         fontSize: 45,
         fontFamily: 'Georgia',
+        textAlign:'center',
+        color: 'blue',
     },
     imageStyle: {
         textAlign:'center',
