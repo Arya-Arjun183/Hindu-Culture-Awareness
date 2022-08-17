@@ -8,7 +8,7 @@ import GitaHomePage from "./src/screens/GitaHomePage";
 import Chapter_Template from "./src/screens/Chapter_Template";
 import Vishnu from "./src/screens/Gods_Godesses_SubPages/Vishnu";
 
-import { Button, Image, TouchableOpacity} from 'react-native';
+import { Image, TouchableOpacity} from 'react-native';
 import home from './src/screens/icons/home-icon.jpg';
 
 function LogoTitle() {
