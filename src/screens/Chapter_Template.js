@@ -109,15 +109,6 @@ class Chapter_Template extends Component {
 					<ScrollView style={styles.container}>
 						{/* Show state of song on website */}
 						
-						<Text style = {styles.textStyleHeader}>
-							{this.title}
-						</Text>
-						{/* <button>
-							<img src = {home} width={50} height={50} onClick = {this.props.navigation.navigate("HomeScreen")}/>
-						</button> */}
-						<TouchableOpacity onPress={() => this.props.navigation.navigate("HomeScreen")}>
-							<img src = {home} width={50} height={50}/>
-						</TouchableOpacity>
 						{/* Button to call our main function */}
 						<button>
 							<img src={play} width={50} height={50} onClick={this.playPauseButton1}/>
