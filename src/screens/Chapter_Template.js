@@ -140,9 +140,7 @@ class Chapter_Template extends Component {
 			if (this.image11=='error'){
 				return (
 					<ScrollView style={styles.container}>
-						{/* Show state of song on website */}
-						
-						{/* Button to call our main function */}
+						<Text style={styles.textStyleHeader}>Part 1</Text>
 						<button>
 							<img src={play} width={50} height={50} onClick={this.playPauseButton1}/>
 							<img src={stop} width={50} height={50} onClick={this.stopAudio1}/>
@@ -172,7 +170,7 @@ class Chapter_Template extends Component {
 							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+4)}
 						</Text>
-						<Text style={styles.textStyleHeader}>{this.title}</Text>
+						<Text style={styles.textStyleHeader}>Part 2</Text>
 						
 						<button>
 						<img src={play} width={50} height={50} onClick={this.playPauseButton2}/>
@@ -209,10 +207,7 @@ class Chapter_Template extends Component {
 				return (
 					<ScrollView>
 						{/* Show state of song on website */}
-						<Text style = {{fontStyle:"EB Garamond"}}>
-							{this.title}
-						</Text>
-						{/* Button to call our main function */}
+						<Text style={styles.textStyleHeader}>Part 1</Text>
 						<button>
 							<img src={play} width={50} height={50} onClick={this.playPauseButton1}/>
 							<img src={stop} width={50} height={50} onClick={this.stopAudio1}/>
@@ -229,12 +224,12 @@ class Chapter_Template extends Component {
 						</Text>
 						<img src = {this.image3}/>
 						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
+						<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+2)}
 						</Text>
 						<img src = {this.image4}/>
 						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
+						<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+3)}
 						</Text>
 						<img src = {this.image5}/>
@@ -242,6 +237,7 @@ class Chapter_Template extends Component {
 							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+4)}
 						</Text>
+						<Text style={styles.textStyleHeader}>Part 2</Text>
 						<button>
 						<img src={play} width={50} height={50} onClick={this.playPauseButton2}/>
 						<img src={stop} width={50} height={50} onClick={this.stopAudio2}/>
