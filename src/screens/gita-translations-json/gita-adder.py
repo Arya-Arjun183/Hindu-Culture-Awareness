@@ -1,7 +1,7 @@
 import json
 
 completeStuff = "{\n"
-for chapterNumber in range(1, 8):
+for chapterNumber in range(1, 18):
     completeStuff = "{\n"
     file = open('gita_chapter_{chap}.json'.format(chap=chapterNumber))
     data = json.load(file)

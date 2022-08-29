@@ -6,14 +6,25 @@ import { ScrollView } from "react-native-gesture-handler";
 import play from './icons/play-icon.jpg';
 import stop from './icons/stop-icon.jpg';
 import home from './icons/home-icon.jpg';
-// import jsonStuff from './gita-verses/chapter-1/gita_chapter_1_verse_1.json';
-import chapter1 from './gita-translations-json/gita_translations_1.json';
-import chapter2 from './gita-translations-json/gita_translations_2.json';
-import chapter3 from './gita-translations-json/gita_translations_3.json';
-import chapter4 from './gita-translations-json/gita_translations_4.json';
-import chapter5 from './gita-translations-json/gita_translations_5.json';
-import chapter6 from './gita-translations-json/gita_translations_6.json';
-import chapter7 from './gita-translations-json/gita_translations_7.json';
+
+import chapter1 from './gita-translations-json/gita_chapter_1.json';
+import chapter2 from './gita-translations-json/gita_chapter_2.json';
+import chapter3 from './gita-translations-json/gita_chapter_3.json';
+import chapter4 from './gita-translations-json/gita_chapter_4.json';
+import chapter5 from './gita-translations-json/gita_chapter_5.json';
+import chapter6 from './gita-translations-json/gita_chapter_6.json';
+import chapter7 from './gita-translations-json/gita_chapter_7.json';
+import chapter8 from './gita-translations-json/gita_chapter_8.json';
+import chapter9 from './gita-translations-json/gita_chapter_9.json';
+import chapter10 from './gita-translations-json/gita_chapter_10.json';
+import chapter11 from './gita-translations-json/gita_chapter_11.json';
+import chapter12 from './gita-translations-json/gita_chapter_12.json';
+import chapter13 from './gita-translations-json/gita_chapter_13.json';
+import chapter14 from './gita-translations-json/gita_chapter_14.json';
+import chapter15 from './gita-translations-json/gita_chapter_15.json';
+import chapter16 from './gita-translations-json/gita_chapter_16.json';
+import chapter17 from './gita-translations-json/gita_chapter_17.json';
+import chapter18 from './gita-translations-json/gita_chapter_18.json';
 
 const ENGLISH_TRANSLATION_HEADER = 'English Translation: \n';
 
@@ -50,7 +61,7 @@ class Chapter_Template extends Component {
 		this.state.isPlaying1 = false;
 
 	}
-	getTranslation(chapter, verse){
+	getTranslation(chapter, verseNum){
 		if (chapter==1){
 				this.mainFile = chapter1;
 		} else if (chapter==2){
@@ -65,8 +76,30 @@ class Chapter_Template extends Component {
 				this.mainFile = chapter6;
 		} else if (chapter==7){
 				this.mainFile = chapter7;
+		} else if (chapter==8){
+			this.mainFile = chapter8;
+		} else if (chapter==9){
+			this.mainFile = chapter9;
+		} else if (chapter==10){
+			this.mainFile = chapter10;
+		} else if (chapter==11){
+			this.mainFile = chapter11;
+		} else if (chapter==12){
+				this.mainFile = chapter12;
+		} else if (chapter==13){
+				this.mainFile = chapter13;
+		} else if (chapter==14){
+				this.mainFile = chapter14;
+		} else if (chapter==15){
+				this.mainFile = chapter15;
+		} else if (chapter==16){
+				this.mainFile = chapter16;
+		} else if (chapter==17){
+				this.mainFile = chapter17;
+		} else if (chapter==18){
+				this.mainFile = chapter18;
 		}
-		this.keyToFind = chapter+"."+verse;
+		this.keyToFind = chapter+"."+verseNum;
 		this.translation = this.mainFile[this.keyToFind];
 		
 		return this.translation;

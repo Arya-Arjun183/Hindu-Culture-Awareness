@@ -20,13 +20,17 @@ for chapterNumber in range(1, 19):
     file = open('gita_chapter_{chap}.json'.format(chap=chapterNumber))
     data = json.load(file)
     r = len(data)+1
+    completeStuff = ""
     for verseNumber in range(1, r):
-        fileName = "../gita-verses/chapter-{chap}/gita_chapter_{chap}_verse_{number}.txt".format(chap=chapterNumber, number=verseNumber)
+        fileName = "./gita_translations_{chap}.json".format(chap=chapterNumber, number=verseNumber)
+        for x in range(0, 6):
+            if data[verseNumber - 1]["translations"][x]["language"] == "english":
+                trans = data[verseNumber - 1]["translations"][x]["description"]
+                stripped = trans.strip()
+                title = "{chap}.{verse}".format(chap=chapterNumber, verse=verseNumber)
+                completeStuff += "\t\"" + title + "\":" + "\"" + stripped + "\",\n"
+                print(stripped)
+                break
         with open(fileName, 'w') as f:
-            for x in range(0, 6):
-                if data[verseNumber - 1]["translations"][x]["language"] == "english":
-                    trans = data[verseNumber - 1]["translations"][x]["description"]
-                    stripped = trans.strip()
-                    f.write(stripped)
-                    print(stripped)
-                    break
+            f.write("{\n"+completeStuff+"\n}")
+

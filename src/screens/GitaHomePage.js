@@ -16,7 +16,7 @@ const GitaHomePage = (props) => {
       image3: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/Screen%20Shot%202022-06-24%20at%205.18.02%20PM.png",
       image4: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/Screen%20Shot%202022-06-24%20at%205.18.18%20PM.png",
       image5: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/Screen%20Shot%202022-06-24%20at%205.18.35%20PM.png",
-      url2:"https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/1_6-10.mp3",
+      url2:   "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/1_6-10.mp3",
       image6: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/Screen%20Shot%202022-06-24%20at%205.18.53%20PM.png",
       image7: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/Screen%20Shot%202022-06-24%20at%205.19.06%20PM.png",
       image8: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/Screen%20Shot%202022-06-24%20at%205.19.20%20PM.png",
@@ -249,6 +249,8 @@ const GitaHomePage = (props) => {
     </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+      chapter:3,
+      verse:1,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_1-5.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_6-10.mp3",  
       title: "Chapter Three - Verses 1-10",
@@ -267,6 +269,8 @@ const GitaHomePage = (props) => {
     </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+      chapter:3,
+      verse:11,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_11-15.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_16-21.mp3",  
       title: "Chapter Three - Verses 11-21",
@@ -286,6 +290,8 @@ const GitaHomePage = (props) => {
     </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+      chapter:3,
+      verse:22,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_22-26.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_27-32.mp3",  
       title: "Chapter Three - Verses 22-32",
@@ -305,6 +311,8 @@ const GitaHomePage = (props) => {
     </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+      chapter:3,
+      verse:33,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_33-37.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_38-43.mp3",  
       title: "Chapter Three - Verses 33-43",
@@ -325,6 +333,8 @@ const GitaHomePage = (props) => {
 
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+      chapter:4,
+      verse:1,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_1-5.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_6-10.mp3",  
       title: "Chapter Four - Verses 1-10",
@@ -343,6 +353,8 @@ const GitaHomePage = (props) => {
     </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+      chapter:4,
+      verse:11,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_11-15.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_16-21.mp3",  
       title: "Chapter Four - Verses 11-21",
@@ -362,6 +374,8 @@ const GitaHomePage = (props) => {
     </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+      chapter:4,
+      verse:22,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_22-26.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_27-32.mp3",  
       title: "Chapter Four - Verses 22-32",
@@ -381,6 +395,8 @@ const GitaHomePage = (props) => {
     </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+      chapter:4,
+      verse:33,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_33-37.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_38-43.mp3",  
       title: "Chapter Four - Verses 33-43",
@@ -400,6 +416,8 @@ const GitaHomePage = (props) => {
     </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+      chapter:5,
+      verse:1,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/5_1-5.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/5_6-10.mp3",  
       title: "Chapter Five - Verses 1-10",
@@ -418,6 +436,8 @@ const GitaHomePage = (props) => {
     </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+      chapter:5,
+      verse:11,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/5_11-15.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/5_16-20.mp3",  
       title: "Chapter Five - Verses 11-20",
@@ -436,6 +456,8 @@ const GitaHomePage = (props) => {
     </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+      chapter:5,
+      verse:21,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/5_21-25.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/5_26-29.mp3",  
       title: "Chapter Five - Verses 21-29",
@@ -453,6 +475,8 @@ const GitaHomePage = (props) => {
     </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+      chapter:6,
+      verse:1,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_1-5.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_6-10.mp3",  
       title: "Chapter Six - Verses 1-10",
@@ -471,6 +495,8 @@ const GitaHomePage = (props) => {
     </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+      chapter:6,
+      verse:11,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_11-15.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_16-20.mp3",  
       title: "Chapter Six - Verses 11-20",
@@ -489,6 +515,8 @@ const GitaHomePage = (props) => {
     </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+      chapter:6,
+      verse:21,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_21-25.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_26-30.mp3",  
       title: "Chapter Six - Verses 21-30",
@@ -507,6 +535,8 @@ const GitaHomePage = (props) => {
     </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+      chapter:6,
+      verse:31,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_31-35.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_36-40.mp3",  
       title: "Chapter Six - Verses 31-40",
@@ -525,6 +555,8 @@ const GitaHomePage = (props) => {
     </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+      chapter:6,
+      verse:41,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_41-45.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_46-47.mp3",  
       title: "Chapter Six - Verses 41-47",
@@ -540,6 +572,8 @@ const GitaHomePage = (props) => {
     </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+      chapter:7,
+      verse:1,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/7_1-5.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/7_6-10.mp3",  
       title: "Chapter Seven - Verses 1-10",
@@ -558,6 +592,8 @@ const GitaHomePage = (props) => {
     </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+    chapter:7,
+      verse:11,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/7_11-15.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/7_16-20.mp3",  
       title: "Chapter Seven - Verses 11-20",
@@ -576,6 +612,8 @@ const GitaHomePage = (props) => {
     </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
+      chapter:7,
+      verse:21,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/7_21-25.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/7_26-30.mp3",  
       title: "Chapter Seven - Verses 21-30",
