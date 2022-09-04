@@ -203,7 +203,7 @@ class Chapter_Template extends Component {
 						</Text>
 					</ScrollView>
 				)
-			} else {
+			}else {
 				return (
 					<ScrollView>
 						{/* Show state of song on website */}
