@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, StyleSheet, View, TouchableOpacity, Image} from 'react-native';
-const gita = require('./icons/gita-icon2.jpg');
+const gita = require('./icons/gita-icon2.jpeg');
 
 const Verses_Translations = (props) => {
     return (
