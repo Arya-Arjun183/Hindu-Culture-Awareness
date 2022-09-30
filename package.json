@@ -5,14 +5,10 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject",
-    "dev": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "heroku-postbuild": "npm run build"
+    "eject": "expo eject"
   },
   "engines": {
-    "node": "16.17.0",
+    "node": ">= 16.17.0",
     "npm": "8.15.0"
   },
   "dependencies": {
