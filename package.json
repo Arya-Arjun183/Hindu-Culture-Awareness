@@ -4,9 +4,8 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web",
-    "eject": "expo eject",
-    "build": "expo build:web"
+    "web": "nodejs",
+    "eject": "expo eject"
   },
   "engines": {
     "node": ">= 16.17.0",
@@ -32,7 +31,6 @@
     "react-youtube": "^9.0.2"
   },
   "devDependencies": {
-    "expo-cli": "^4.0.16",
     "@babel/core": "^7.12.9"
   },
   "rnpm": {
