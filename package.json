@@ -7,7 +7,6 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "build": "expo build:web",
-    "heroku-postbuild": "npm install --legacy-peer-deps && npm run build"
   },
   "engines": {
     "node": ">= 16.17.0",
@@ -33,7 +32,8 @@
     "react-youtube": "^9.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.12.9",
+    "expo-cli": "^4.0.16"
   },
   "rnpm": {
     "assets": [
