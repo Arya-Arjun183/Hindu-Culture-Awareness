@@ -6,8 +6,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "build": "expo build:web",
-    "heroku-postbuild": "npm run build"
+    "build": "expo build:web"
   },
   "engines": {
     "node": ">= 16.17.0",
