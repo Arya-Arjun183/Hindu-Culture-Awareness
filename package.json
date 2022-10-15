@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
-    "expo-cli": "^4.0.16"
+    "expo-cli": "4.13.0"
   },
   "rnpm": {
     "assets": [
