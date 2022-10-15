@@ -1,5 +1,5 @@
 {
-    "root": "web-build/",
+    "root": "/app/web-build/",
     "clean_urls": false,
     "routes": {
       "/**": "index.html"
