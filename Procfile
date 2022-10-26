@@ -1,1 +1,1 @@
-web: bin/boot
+web: npx serve web-build
