@@ -9,7 +9,7 @@ import Chapter_Template from "./src/screens/Chapter_Template";
 import Vishnu from "./src/screens/Gods_Godesses_SubPages/Vishnu";
 
 import { Image, TouchableOpacity} from 'react-native';
-import home from './src/screens/icons/home-icon.jpg';
+import home from './assets/favicon.png';
 
 function LogoTitle() {
   return (
@@ -90,7 +90,7 @@ const navigator = createStackNavigator(
   {
     initialRouteName: "HomeScreen",
     defaultNavigationOptions:  {
-      title: "Hindu Culture App",
+      title: "",
       headerStyle: {
         backgroundColor: 'darkorange',
       },
