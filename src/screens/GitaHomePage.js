@@ -1444,7 +1444,7 @@ const GitaHomePage = (props) => {
       image7: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter18/18_77.png",
       image8: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter18/18_78.png",
       })}>
-        <Text style={styles.textButton}>Chapter Eighteen - Verses 31-40</Text>
+        <Text style={styles.textButton}>Chapter Eighteen - Verses 71-78</Text>
     </TouchableOpacity>
   </ScrollView>
   );
