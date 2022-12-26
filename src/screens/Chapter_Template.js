@@ -55,12 +55,21 @@ class Chapter_Template extends Component {
 	mainFile = "";
 	keyToFind = "1.1";
 	translation = chapter1.keyToFind;
+
+	componentDidMount() {
+	}
+	
+	componentWillUnmount() {
+		this.stopAudio1();
+		this.stopAudio2();
+	}
+		
 	stopAudio1 = ()=>{
 		this.state.audio1.pause();
 		this.state.audio1.currentTime = 0;
 		this.state.isPlaying1 = false;
-
 	}
+
 	getTranslation(chapter, verseNum){
 		if (chapter==1){
 				this.mainFile = chapter1;
