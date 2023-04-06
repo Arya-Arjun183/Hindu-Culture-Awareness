@@ -5,7 +5,6 @@ import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
 import { ScrollView } from "react-native-gesture-handler";
 import play from './icons/play-icon.jpg';
 import stop from './icons/stop-icon.jpg';
-import home from './icons/home-icon.jpg';
 
 import chapter1 from './gita-translations-json/gita_chapter_1.json';
 import chapter2 from './gita-translations-json/gita_chapter_2.json';
@@ -574,28 +573,28 @@ class Chapter_Template extends Component {
 }
 const styles = StyleSheet.create({
 	textStyle:{
-			fontSize:25,
-			fontFamily: 'EB Garamond',
-			backgroundColor: 'white',
-			justifyContent: 'space-between',
-			flex:1,
-			marginTop:5,
-			marginBottom: 5,
-			marginLeft: 5,
-			marginRight: 5,
-			paddingVertical: 30,
-			paddingStart: 5,
-			paddingEnd: 10,
-			paddingHorizontal: 30,
-			borderWidth: 2,
-    		borderColor: "grey",
-    		borderRadius: 0.5,
-			textAlign:'center',
-			fontStyle: 'italic',
+		fontSize:25,
+		fontFamily: 'Helvetica',
+		backgroundColor: 'white',
+		justifyContent: 'space-between',
+		flex:1,
+		marginTop:5,
+		marginBottom: 5,
+		marginLeft: 5,
+		marginRight: 5,
+		paddingVertical: 30,
+		paddingStart: 5,
+		paddingEnd: 10,
+		paddingHorizontal: 30,
+		borderWidth: 2,
+		borderColor: "grey",
+		borderRadius: 0.5,
+		textAlign:'center',
+		fontStyle: 'italic',
 	},
 	textStyleHeader:{
 		color: 'blue',
-		fontFamily: 'EB Garamond',
+		fontFamily: 'Helvetica',
 		justifyContent: 'space-between',
 		flex:1,
 		fontSize: 40,
@@ -603,7 +602,7 @@ const styles = StyleSheet.create({
     	textAlign:'center',
 	},
 	textStyleSmall:{
-		fontFamily: 'EB Garamond',
+		fontFamily: 'Helvetica',
 		justifyContent: 'space-between',
 		flex:1,
 		fontSize: 20,
