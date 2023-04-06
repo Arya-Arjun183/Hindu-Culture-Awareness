@@ -6,7 +6,7 @@ import Gods_Godesses from "./src/screens/Gods_Godesses";
 import Festivals from "./src/screens/Festivals";
 import GitaHomePage from "./src/screens/GitaHomePage";
 import Chapter_Template from "./src/screens/Chapter_Template";
-import Vishnu from "./src/screens/Gods_Godesses_SubPages/Vishnu";
+import Gods_Template from "./src/screens/Gods_Template";
 
 import { Image, TouchableOpacity} from 'react-native';
 import home from './assets/favicon.png';
@@ -76,10 +76,10 @@ const navigator = createStackNavigator(
 		  </TouchableOpacity>
       }),
     },
-    Vishnu:  {
-      screen: Vishnu,
-      navigationOptions: ({ navigation }) => ({
-        title: 'Vishnu',
+    Gods_Template:  {
+      screen: Gods_Template,
+      navigationOptions: ({navigation}) => ({
+        title: `${navigation.state.params.Name}`,
         headerRight: () =>  <TouchableOpacity onPress={() => navigation.navigate("HomeScreen")}>
         <img src = {home} width={50} height={50}/>
       </TouchableOpacity>
