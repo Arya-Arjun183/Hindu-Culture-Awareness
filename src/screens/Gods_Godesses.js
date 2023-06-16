@@ -23,20 +23,23 @@ const Gods_Godesses = (props) =>{
             <TouchableOpacity onPress ={() => props.navigation.navigate("Gods_Template", {Name: "Saraswati"})}>
                 <Text style = {styles.textStyle}>Saraswati</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress ={() => props.navigation.navigate("Gods_Template", {Name: "Ganesh"})}>
-                <Text style = {styles.textStyle}>Ganesh</Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress ={() => props.navigation.navigate("Gods_Template", {Name: "Rama"})}>
-                <Text style = {styles.textStyle}>Rama</Text>
+            <TouchableOpacity onPress ={() => props.navigation.navigate("Gods_Template", {Name: "Ganapati"})}>
+                <Text style = {styles.textStyle}>Ganapati</Text>
             </TouchableOpacity>
             <TouchableOpacity onPress ={() => props.navigation.navigate("Gods_Template", {Name: "Krishna"})}>
                 <Text style = {styles.textStyle}>Krishna</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress ={() => props.navigation.navigate("Gods_Template", {Name: "Rama"})}>
+                <Text style = {styles.textStyle}>Rama</Text>
             </TouchableOpacity>
             <TouchableOpacity onPress ={() => props.navigation.navigate("Gods_Template", {Name: "Hanuman"})}>
                 <Text style = {styles.textStyle}>Hanuman</Text>
             </TouchableOpacity>
             <TouchableOpacity onPress ={() => props.navigation.navigate("Gods_Template", {Name: "Shakti"})}>
                 <Text style = {styles.textStyle}>Shakti</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress ={() => props.navigation.navigate("Gods_Template", {Name: "Shakti"})}>
+                <Text style = {styles.textStyle}>Kartikeya</Text>
             </TouchableOpacity>
         </View>
     );
