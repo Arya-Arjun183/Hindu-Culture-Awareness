@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
         fontSize:50,
         fontFamily: 'EB Garamond',
         textAlign: 'center',
-        color: 'blue',
+        color: '#ff8c04',
     }, textStyleHeader:{
         textAlign: 'center',
         fontFamily: 'EB Garamond',

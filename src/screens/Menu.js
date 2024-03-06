@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
   },
   textButton:{
     fontSize: 40,
-    color: 'blue',
+    color: '#ff8c04',
     fontFamily:'EB Garamond',
     textAlign:'center',
     margin: 20,

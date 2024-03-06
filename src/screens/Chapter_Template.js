@@ -345,7 +345,6 @@ class Chapter_Template extends Component {
 							{this.getTranslation(this.chapterNum,this.verse+4)}
 						</Text>
 						<Text style={styles.textStyleHeader}>Part 2</Text>
-						
 						<button>
 						<img src={play} width={50} height={50} onClick={this.playPauseButton2}/>
 						<img src={stop} width={50} height={50} onClick={this.stopAudio2}/>
