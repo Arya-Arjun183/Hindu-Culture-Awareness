@@ -10,10 +10,14 @@ const Festivals = (props) => {
         <TouchableOpacity
         onPress={()=>props.navigation.navigate("Science_Template", {Name:"Sashtanga Namaskara"})}>
           <Text style={styles.textStyle}>Sashtanga Namaskara</Text>
-        </TouchableOpacity>  
+        </TouchableOpacity> 
         <TouchableOpacity
         onPress={()=>props.navigation.navigate("Science_Template", {Name:"Charan Sparsh"})}>
           <Text style={styles.textStyle}>Charan Sparsh</Text>
+        </TouchableOpacity>   
+        <TouchableOpacity
+        onPress={()=>props.navigation.navigate("Science_Template", {Name:"Hindu Food Etiquette"})}>
+          <Text style={styles.textStyle}>Hindu Food Etiquette</Text>
         </TouchableOpacity>  
         <TouchableOpacity
         onPress={()=>props.navigation.navigate("Science_Template", {Name:"Sitting on the Floor and Eating"})}>

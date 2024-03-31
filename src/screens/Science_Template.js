@@ -20,19 +20,11 @@ class Science_Template extends Component {
 }
 
 const styles = StyleSheet.create({
-    // title:{
-    //     fontSize: 50,
-    //     textAlign: 'center',
-    //     fontWeight: 'bold',
-    //     fontFamily: 'Helvetica',
-    //     color: 'blue',
-    // },
     mainText:{
-        fontSize: 50,
+        fontSize: 30,
         textAlign: 'center',
         fontFamily: 'Helvetica',
         color: 'blue',
-        fontFamily: 'Helvetica'
     }
 })
 
