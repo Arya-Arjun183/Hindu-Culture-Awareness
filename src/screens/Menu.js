@@ -5,6 +5,7 @@ const gita = require('./icons/gita-icon.jpeg');
 const om = require('./icons/om.png');
 const verses = require('./icons/verses.jpeg');
 const festivals = require('./icons/festivals.jpeg');
+const science = require('./icons/science.jpeg');
 
 const Menu = (props) => {
 
@@ -58,6 +59,21 @@ const Menu = (props) => {
         source = {festivals}
       >
       </Image>
+      <TouchableOpacity onPress={()=> props.navigation.navigate("Science")}>
+        <Text style = {styles.textButton}>Science</Text>
+        <Image
+      style={{
+        resizeMode: "stretch",
+        flex: 1, 
+        alignSelf: 'center',
+        height: 200,
+        width: 320,
+        borderWidth: 0,
+        borderRadius: 0
+        }}
+        source = {science}
+      ></Image>
+      </TouchableOpacity>
     </TouchableOpacity>
   </View>
   );

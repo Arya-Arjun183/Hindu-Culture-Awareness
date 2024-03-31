@@ -8,6 +8,8 @@ import GitaHomePage from "./src/screens/GitaHomePage";
 import Chapter_Template from "./src/screens/Chapter_Template";
 import Gods_Template from "./src/screens/Gods_Template";
 import Festival_Template from "./src/screens/Festival_Template";
+import Science_Template from "./src/screens/Science_Template";
+import Science from "./src/screens/Science";
 import AppHome from "./src/screens/AppHome";
 
 import { Image, TouchableOpacity} from 'react-native';
@@ -97,6 +99,24 @@ const navigator = createStackNavigator(
     },
     Festivals_Template:  {
       screen: Festival_Template,
+      navigationOptions: ({navigation}) => ({
+        title: `${navigation.state.params.Name}`,
+        headerRight: () =>  <TouchableOpacity onPress={() => navigation.navigate("AppHome")}>
+        <img src = {home} width={50} height={50}/>
+      </TouchableOpacity>
+      }),
+    },
+    Science: {
+      screen: Science,
+      navigationOptions: ({navigation}) => ({
+        title: `Science`,
+        headerRight: () =>  <TouchableOpacity onPress={() => navigation.navigate("AppHome")}>
+        <img src = {home} width={50} height={50}/>
+      </TouchableOpacity>
+      }),
+    },
+    Science_Template:  {
+      screen: Science_Template,
       navigationOptions: ({navigation}) => ({
         title: `${navigation.state.params.Name}`,
         headerRight: () =>  <TouchableOpacity onPress={() => navigation.navigate("AppHome")}>
