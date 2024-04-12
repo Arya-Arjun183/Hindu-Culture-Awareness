@@ -10,7 +10,7 @@ const AppHome = (props) => {
             style={styles.imageStyle}
           source={gita}
         />
-            <Text style = {styles.textInfo}>Welcome to Ananth, your ultimate gateway to the rich and vibrant world of Hindi culture. At Ananth, our mission is to immerse you in the depths of this ancient and profound culture, offering you a treasure trove of knowledge and insights. Discover the divine with information about various goddesses, explore the wisdom of the Bhagavad Gita with verses and their translations, and get acquainted with the tapestry of Hindu religious festivals. Ananth is more than just an app; it's your companion in the journey to understand and appreciate the beauty of Hindi culture. Join us in this exploration and let the colors, sounds, and spirituality of Hindu traditions enrich your life.</Text>
+            <Text style = {styles.textInfo}>Welcome to Ananth, your ultimate gateway to the rich and vibrant world of Hindu culture. In Hinduism, the concept of dharma incorporates ethical principles and cosmic order, fostering a deep understanding of societal harmony and individual responsibility within a spiritual framework. Additionally, ancient Indian scientific contributions in fields such as mathematics, astronomy, and medicine have left a lasting legacy, demonstrating the culture's commitment to empirical observation and systematic inquiry.</Text>
             <TouchableOpacity
             onPress={() => props.navigation.navigate("Menu")}>
                 <Text style={styles.textButton}>Main Menu</Text>
