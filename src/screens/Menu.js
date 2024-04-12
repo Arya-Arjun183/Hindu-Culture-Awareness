@@ -1,16 +1,29 @@
 import React from 'react';
 import { Text, StyleSheet, View, Button, TouchableOpacity, Image } from 'react-native';
-const icon = require('./icons/favicon.png');
-const gita = require('./icons/gita-icon.jpeg');
 const om = require('./icons/om.png');
 const verses = require('./icons/verses.jpeg');
 const festivals = require('./icons/festivals.jpeg');
-const science = require('./icons/science.jpeg');
+const scienceImg = require('./icons/iron-pillar.jpeg');
 
 const Menu = (props) => {
 
   return (
   <View>
+    <TouchableOpacity onPress={()=> props.navigation.navigate("Science")}>
+        <Text style = {styles.textButton}>The Science Behind Hinduism</Text>
+        <Image
+          style={{
+            resizeMode: "stretch",
+            flex: 1, 
+            alignSelf: 'center',
+            height: 200,
+            width: 320,
+            borderWidth: 0,
+            borderRadius: 0
+            }}
+            source = {scienceImg}
+        ></Image>
+    </TouchableOpacity>
     <TouchableOpacity
     onPress={() => props.navigation.navigate("Gods_Godesses")}>
       <Text style={styles.textButton}>Gods and Godesses</Text>
@@ -59,21 +72,6 @@ const Menu = (props) => {
         source = {festivals}
       >
       </Image>
-      <TouchableOpacity onPress={()=> props.navigation.navigate("Science")}>
-        <Text style = {styles.textButton}>Science</Text>
-        <Image
-      style={{
-        resizeMode: "stretch",
-        flex: 1, 
-        alignSelf: 'center',
-        height: 200,
-        width: 320,
-        borderWidth: 0,
-        borderRadius: 0
-        }}
-        source = {science}
-      ></Image>
-      </TouchableOpacity>
     </TouchableOpacity>
   </View>
   );

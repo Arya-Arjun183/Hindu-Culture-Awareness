@@ -109,7 +109,7 @@ const navigator = createStackNavigator(
     Science: {
       screen: Science,
       navigationOptions: ({navigation}) => ({
-        title: `Science`,
+        title: `The Science Behind Hinduism`,
         headerRight: () =>  <TouchableOpacity onPress={() => navigation.navigate("AppHome")}>
         <img src = {home} width={50} height={50}/>
       </TouchableOpacity>
