@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
-const Festivals = (props) => {
+const Science = (props) => {
     return (
       <View>
         <TouchableOpacity
@@ -50,4 +50,4 @@ const Festivals = (props) => {
   },
   });
   
-  export default Festivals;
+  export default Science;

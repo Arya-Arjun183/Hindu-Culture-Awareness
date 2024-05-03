@@ -4,6 +4,7 @@ const om = require('./icons/om.png');
 const verses = require('./icons/verses.jpeg');
 const festivals = require('./icons/festivals.jpeg');
 const scienceImg = require('./icons/iron-pillar.jpeg');
+const interfaith = require('./icons/interfaith.png');
 
 const Menu = (props) => {
 
@@ -22,6 +23,21 @@ const Menu = (props) => {
             borderRadius: 0
             }}
             source = {scienceImg}
+        ></Image>
+    </TouchableOpacity>
+    <TouchableOpacity onPress={()=> props.navigation.navigate("InterFaith")}>
+        <Text style = {styles.textButton}>Interfaith Structures in Hinduism</Text>
+        <Image
+          style={{
+            resizeMode: "stretch",
+            flex: 1, 
+            alignSelf: 'center',
+            height: 200,
+            width: 320,
+            borderWidth: 0,
+            borderRadius: 0
+            }}
+            source = {interfaith}
         ></Image>
     </TouchableOpacity>
     <TouchableOpacity

@@ -11,6 +11,8 @@ import Festival_Template from "./src/screens/Festival_Template";
 import Science_Template from "./src/screens/Science_Template";
 import Science from "./src/screens/Science";
 import AppHome from "./src/screens/AppHome";
+import InterFaith from "./src/screens/InterFaith";
+import InterFaith_Template from "./src/screens/InterFaith_Template";
 
 import { Image, TouchableOpacity} from 'react-native';
 import home from './assets/favicon.png';
@@ -124,7 +126,24 @@ const navigator = createStackNavigator(
       </TouchableOpacity>
       }),
     },
-
+    InterFaith:  {
+      screen: InterFaith,
+      navigationOptions: ({navigation}) => ({
+        title: `Interfaith Dialogue`,
+        headerRight: () =>  <TouchableOpacity onPress={() => navigation.navigate("AppHome")}>
+        <img src = {home} width={50} height={50}/>
+      </TouchableOpacity>
+      }),
+    },
+    InterFaith_Template:  {
+      screen: InterFaith_Template,
+      navigationOptions: ({navigation}) => ({
+        title: `${navigation.state.params.Name}`,
+        headerRight: () =>  <TouchableOpacity onPress={() => navigation.navigate("AppHome")}>
+        <img src = {home} width={50} height={50}/>
+      </TouchableOpacity>
+      }),
+    },
   },
   {
     initialRouteName: "AppHome",
