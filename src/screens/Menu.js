@@ -5,6 +5,7 @@ const verses = require('./icons/verses.jpeg');
 const festivals = require('./icons/festivals.jpeg');
 const scienceImg = require('./icons/iron-pillar.jpeg');
 const interfaith = require('./icons/interfaith.png');
+const music = require('./icons/music.jpeg');
 
 const Menu = (props) => {
 
@@ -40,6 +41,38 @@ const Menu = (props) => {
             source = {interfaith}
         ></Image>
     </TouchableOpacity>
+    <TouchableOpacity onPress={() => props.navigation.navigate("Verses_Translations")}>
+      <Text style={styles.textButton}>Verses and Translations</Text>
+      <Image
+      style={{
+        resizeMode: "stretch",
+        flex: 1, 
+        alignSelf: 'center',
+        height: 200,
+        width: 400,
+        borderWidth: 0,
+        borderRadius: 0
+        }}
+        source = {verses}
+      >
+      </Image>
+    </TouchableOpacity>
+    <TouchableOpacity onPress={() => props.navigation.navigate("Music")}>
+      <Text style={styles.textButton}>Music</Text>
+      <Image
+      style={{
+        resizeMode: "stretch",
+        flex: 1, 
+        alignSelf: 'center',
+        height: 200,
+        width: 400,
+        borderWidth: 0,
+        borderRadius: 0
+        }}
+        source = {music}
+      >
+      </Image>
+    </TouchableOpacity>
     <TouchableOpacity
     onPress={() => props.navigation.navigate("Gods_Godesses")}>
       <Text style={styles.textButton}>Gods and Godesses</Text>
@@ -54,22 +87,6 @@ const Menu = (props) => {
         borderRadius: 0
         }}
         source = {om}
-      >
-      </Image>
-    </TouchableOpacity>
-    <TouchableOpacity onPress={() => props.navigation.navigate("Verses_Translations")}>
-      <Text style={styles.textButton}>Verses and Translations</Text>
-      <Image
-      style={{
-        resizeMode: "stretch",
-        flex: 1, 
-        alignSelf: 'center',
-        height: 200,
-        width: 400,
-        borderWidth: 0,
-        borderRadius: 0
-        }}
-        source = {verses}
       >
       </Image>
     </TouchableOpacity>
