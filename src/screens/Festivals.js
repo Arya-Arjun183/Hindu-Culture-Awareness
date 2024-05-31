@@ -26,7 +26,15 @@ const Festivals = (props) => {
         <TouchableOpacity
         onPress={()=>props.navigation.navigate("Festivals_Template", {Name:"Dussehra"})}>
           <Text style={styles.textStyle}>Dussehra</Text>
-        </TouchableOpacity>    
+        </TouchableOpacity>
+        <TouchableOpacity
+        onPress={()=>props.navigation.navigate("Festivals_Template", {Name:"Makar Sankranti"})}>
+          <Text style={styles.textStyle}>Makar Sankranti</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+        onPress={()=>props.navigation.navigate("Festivals_Template", {Name:"Pongal"})}>
+          <Text style={styles.textStyle}>Pongal</Text>
+        </TouchableOpacity>        
       </View>
     );
   };
