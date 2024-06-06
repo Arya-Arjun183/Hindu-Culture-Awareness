@@ -13,7 +13,8 @@ const Menu = (props) => {
   <View>
     <TouchableOpacity onPress={()=> props.navigation.navigate("Science")}>
         <Text style = {styles.textButton}>The Science Behind Hinduism</Text>
-        <Image
+    </TouchableOpacity>
+    <Image
           style={{
             resizeMode: "stretch",
             flex: 1, 
@@ -25,10 +26,10 @@ const Menu = (props) => {
             }}
             source = {scienceImg}
         ></Image>
-    </TouchableOpacity>
     <TouchableOpacity onPress={()=> props.navigation.navigate("InterFaith")}>
         <Text style = {styles.textButton}>Interfaith Structures in Hinduism</Text>
-        <Image
+    </TouchableOpacity>
+    <Image
           style={{
             resizeMode: "stretch",
             flex: 1, 
@@ -40,10 +41,10 @@ const Menu = (props) => {
             }}
             source = {interfaith}
         ></Image>
-    </TouchableOpacity>
     <TouchableOpacity onPress={() => props.navigation.navigate("Verses_Translations")}>
       <Text style={styles.textButton}>Verses and Translations</Text>
-      <Image
+    </TouchableOpacity>
+    <Image
       style={{
         resizeMode: "stretch",
         flex: 1, 
@@ -56,10 +57,10 @@ const Menu = (props) => {
         source = {verses}
       >
       </Image>
-    </TouchableOpacity>
     <TouchableOpacity onPress={() => props.navigation.navigate("Music")}>
       <Text style={styles.textButton}>Music</Text>
-      <Image
+    </TouchableOpacity>
+    <Image
       style={{
         resizeMode: "stretch",
         flex: 1, 
@@ -72,11 +73,11 @@ const Menu = (props) => {
         source = {music}
       >
       </Image>
-    </TouchableOpacity>
     <TouchableOpacity
     onPress={() => props.navigation.navigate("Gods_Godesses")}>
       <Text style={styles.textButton}>Gods and Godesses</Text>
-      <Image
+    </TouchableOpacity>
+    <Image
       style={{
         resizeMode: "stretch",
         flex: 1, 
@@ -89,10 +90,10 @@ const Menu = (props) => {
         source = {om}
       >
       </Image>
-    </TouchableOpacity>
     <TouchableOpacity onPress={() => props.navigation.navigate("Festivals")}>
         <Text style={styles.textButton}>Festivals</Text>
-        <Image
+    </TouchableOpacity>
+    <Image
       style={{
         resizeMode: "stretch",
         flex: 1, 
@@ -105,7 +106,6 @@ const Menu = (props) => {
         source = {festivals}
       >
       </Image>
-    </TouchableOpacity>
   </View>
   );
 };
