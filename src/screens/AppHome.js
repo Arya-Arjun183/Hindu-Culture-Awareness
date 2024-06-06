@@ -2,6 +2,14 @@ import React,{ useRef, useEffect, useState } from 'react';
 import { Text, StyleSheet, View, Button, TouchableOpacity, Image, Animated } from 'react-native';
 const gita = require('./icons/gita-icon.jpeg')
 
+import { logEvent } from '../analytics';
+
+
+const handleClick = (props) => {
+  logEvent('User', 'Clicked the main menu');
+  props.navigation.navigate("Menu");
+};
+
 const AppHome = (props) => {
     return (
         <View>
@@ -12,7 +20,7 @@ const AppHome = (props) => {
         />
             <Text style = {styles.textInfo}>Welcome to Ananth, your ultimate gateway to the rich and vibrant world of Hindu culture. In Hinduism, the concept of dharma incorporates ethical principles and cosmic order, fostering a deep understanding of societal harmony and individual responsibility within a spiritual framework. Additionally, ancient Indian scientific contributions in fields such as mathematics, astronomy, and medicine have left a lasting legacy, demonstrating the culture's commitment to empirical observation and systematic inquiry.</Text>
             <TouchableOpacity
-            onPress={() => props.navigation.navigate("Menu")}>
+            onPress={() => handleClick(props)}>
                 <Text style={styles.textButton}>Main Menu</Text>
             </TouchableOpacity>
         </View>
