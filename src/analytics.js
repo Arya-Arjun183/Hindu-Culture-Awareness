@@ -1,18 +1,21 @@
 // src/analytics.js
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 const initGA = (trackingID) => {
   ReactGA.initialize(trackingID);
 };
 
-const logPageView = (screenName) => {
-  ReactGA.set({ page: screenName });
-  ReactGA.pageview(screenName);
+const logPageView = (screenName = '', title='') => {
+  ReactGA.send({ hitType: "pageview", page: screenName, title: title });
 };
 
-const logEvent = (category = '', action = '') => {
+const logEvent = (category = '', action = '', label = '') => {
   if (category && action) {
-    ReactGA.event({ category, action });
+    if (label) {
+      ReactGA.event({ category, action, label });
+    } else {
+      ReactGA.event({ category, action });
+    }
   }
 };
 
