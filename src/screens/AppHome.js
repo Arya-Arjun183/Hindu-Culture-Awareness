@@ -2,11 +2,12 @@ import React,{ useRef, useEffect, useState } from 'react';
 import { Text, StyleSheet, View, Button, TouchableOpacity, Image, Animated } from 'react-native';
 const gita = require('./icons/gita-icon.jpeg')
 
-import { logEvent } from '../analytics';
+import { logPageView } from '../analytics';
 
 
 const handleClick = (props) => {
-  logEvent('User', 'Clicked the main menu');
+  logPageView('AppHome', 'Main Menu');
+
   props.navigation.navigate("Menu");
 };
 
