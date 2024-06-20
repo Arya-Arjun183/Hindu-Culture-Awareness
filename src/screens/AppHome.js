@@ -2,7 +2,7 @@ import React,{ useRef, useEffect, useState } from 'react';
 import { Text, StyleSheet, View, Button, TouchableOpacity, Image, Animated } from 'react-native';
 const gita = require('./icons/gita-icon.jpeg')
 
-import { logEvent,logPageView } from '../analytics';
+import { logPageView } from '../analytics';
 
 
 const handleClick = (props) => {
