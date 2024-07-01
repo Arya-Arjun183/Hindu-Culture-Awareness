@@ -45,15 +45,17 @@ class Festivals_Template extends Component{
 
 const styles = StyleSheet.create({
     dateText:{
-        fontSize: 35,
+        fontSize: 30,
         textAlign: 'center',
         fontStyle:'italic',
         fontFamily: 'Helvetica',
+        color: '#71797E',
     },
     mainText:{
-        fontSize: 40,
+        fontSize: 30,
         textAlign: 'center',
         fontFamily: 'Helvetica',
+        color:'#007FFF',
     }
 })
 

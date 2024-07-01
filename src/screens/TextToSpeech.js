@@ -44,10 +44,10 @@ const TextToSpeech = ({ text }) => {
   };
 
   return (
-    <div>
-      <button onClick={handlePlay}>{isPaused ? "Resume" : "Play"}</button>
-      <button onClick={handlePause}>Pause</button>
-      <button onClick={handleStop}>Stop</button>
+    <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px', marginBottom: '5px'}}>
+      <button style={{ marginRight: '5px'}} onClick={handlePlay}>{isPaused ? "Resume" : "Play"}</button>
+      <button style={{ marginRight: '5px'}} onClick={handlePause}>Pause</button>
+      <button style={{ marginRight: '5px'}} onClick={handleStop}>Stop</button>
     </div>
   );
 };

@@ -37,12 +37,6 @@ const Music = (props) => {
 }
 
 const styles = StyleSheet.create({
-    text: {
-      fontSize: 30,
-      fontFamily: 'Georgia',
-      textAlign: 'center',
-      color: 'blue',
-    },
     textStyle:{
       fontSize:50,
       fontFamily: 'EB Garamond',

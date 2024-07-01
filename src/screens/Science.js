@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
+import { Text, StyleSheet, View, TouchableOpacity } from 'react-native';
 const Science = (props) => {
     return (
       <View>
@@ -36,12 +36,6 @@ const Science = (props) => {
   };
   
   const styles = StyleSheet.create({
-    text: {
-      fontSize: 30,
-      fontFamily: 'Georgia',
-      textAlign: 'center',
-      color: 'blue',
-    },
     textStyle:{
       fontSize:50,
       fontFamily: 'EB Garamond',

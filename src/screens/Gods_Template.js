@@ -51,9 +51,10 @@ const styles = StyleSheet.create({
     //     color: 'blue',
     // },
     mainText:{
-        fontSize: 25,
+        fontSize: 30,
         textAlign: 'center',
         fontFamily: 'Helvetica',
+        color:'#007FFF',
     }
 })
 export default Gods_Template;
