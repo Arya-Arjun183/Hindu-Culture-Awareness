@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         fontSize: 30,
         textAlign: 'center',
         fontFamily: 'Helvetica',
-        color: 'blue',
+        color:'#007FFF',
     }
 })
 
