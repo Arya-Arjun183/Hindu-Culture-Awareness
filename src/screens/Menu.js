@@ -106,6 +106,9 @@ const Menu = (props) => {
         source = {festivals}
       >
       </Image>
+      <TouchableOpacity onPress={() => props.navigation.navigate("Feedback")}>
+        <Text style={styles.textButton}>Feedback</Text>
+      </TouchableOpacity>
   </View>
   );
 };
