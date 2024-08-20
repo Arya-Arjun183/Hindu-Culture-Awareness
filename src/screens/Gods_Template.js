@@ -29,7 +29,7 @@ class Gods_Template extends Component{
         return(
             <ScrollView>
                 <View>
-                if {quote ? (
+                {quote ? (
                     <>
                     <TextToSpeech text = {quote}/>
                     <Text style = {styles.quote}>{quote}</Text>
