@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, StyleSheet, ScrollView, Button, TouchableOpacity } from 'react-native';
+import { Text, StyleSheet, ScrollView, Button, TouchableOpacity, View } from 'react-native';
 import { Component } from 'react/cjs/react.production.min';
 import TextToSpeech from './TextToSpeech';
 import gods from './god-data/gods.json'
@@ -22,14 +22,37 @@ class Gods_Template extends Component{
     }
 
     render(){
+        var quote = this.getQuote(this.godName)
+        var summary = this.getSummary(this.godName)
+        var additionalInfo = this.getAdditionalInfo(this.godName)
+
         return(
             <ScrollView>
-                <TextToSpeech text = {this.getQuote(this.godName)}/>
-                <Text style = {styles.quote}>{this.getQuote(this.godName)}</Text>
-                <TextToSpeech text = {this.getSummary(this.godName)}/>
-                <Text style = {styles.mainText}> {this.getSummary(this.godName)}</Text>
-                <TextToSpeech text = {this.getAdditionalInfo(this.godName)}/>
-                <Text style = {styles.mainText}>{this.getAdditionalInfo(this.godName)}</Text>
+                <View>
+                {quote ? (
+                    <>
+                    <TextToSpeech text = {quote}/>
+                    <Text style = {styles.quote}>{quote}</Text>
+                    </>
+                ) : null}
+                </View>
+                <View>
+                {summary ? (
+                    <>
+                    <TextToSpeech text = {summary}/>
+                    <Text style = {styles.mainText}>{summary}</Text>
+                    </>
+                ) : null}
+                </View>
+
+                <View>
+                {additionalInfo ? (
+                    <>
+                    <TextToSpeech text = {additionalInfo}/>
+                    <Text style = {styles.mainText}>{additionalInfo}</Text>
+                    </>
+                ) : null}
+                </View>
                 <img src = {this.getImage(this.godName)}></img>
             </ScrollView>
         );
