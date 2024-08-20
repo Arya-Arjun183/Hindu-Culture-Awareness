@@ -106,8 +106,8 @@ const Menu = (props) => {
         source = {festivals}
       >
       </Image>
-      <TouchableOpacity onPress={()=>props.navigation.navigate("AboutMe")}>
-        <Text style={styles.textButton}>About Me</Text>
+      <TouchableOpacity onPress={()=>props.navigation.navigate("AboutUs")}>
+        <Text style={styles.textButton}>About Us</Text>
       </TouchableOpacity>
   </View>
   );

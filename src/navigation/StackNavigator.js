@@ -17,7 +17,7 @@ import InterFaith from "../screens/InterFaith";
 import InterFaith_Template from "../screens/InterFaith_Template";
 import Music from "../screens/Music";
 import Music_Template from "../screens/Music_Template";
-import AboutMe from "../screens/AboutMe";
+import AboutUs from "../screens/AboutUs";
 
 import { Image, TouchableOpacity} from 'react-native';
 //import home from './/assets/favicon.png';
@@ -150,10 +150,10 @@ const navigator = createStackNavigator(
       </TouchableOpacity>
       }),
     },
-    AboutMe:  {
-      screen: AboutMe,
+    AboutUs:  {
+      screen: AboutUs,
       navigationOptions: ({navigation}) => ({
-        title: `About the Developer`,
+        title: `About Us`,
         headerRight: () =>  <TouchableOpacity onPress={() => navigation.navigate("AppHome")}>
         <img src = {home} width={50} height={50}/>
       </TouchableOpacity>
