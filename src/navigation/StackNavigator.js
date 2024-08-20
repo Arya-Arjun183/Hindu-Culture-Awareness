@@ -17,6 +17,7 @@ import InterFaith from "../screens/InterFaith";
 import InterFaith_Template from "../screens/InterFaith_Template";
 import Music from "../screens/Music";
 import Music_Template from "../screens/Music_Template";
+import Feedback from "../screens/Feedback";
 
 import { Image, TouchableOpacity} from 'react-native';
 //import home from './/assets/favicon.png';
@@ -144,6 +145,15 @@ const navigator = createStackNavigator(
       screen: InterFaith_Template,
       navigationOptions: ({navigation}) => ({
         title: `${navigation.state.params.Name}`,
+        headerRight: () =>  <TouchableOpacity onPress={() => navigation.navigate("AppHome")}>
+        <img src = {home} width={50} height={50}/>
+      </TouchableOpacity>
+      }),
+    },
+    Feedback:  {
+      screen: Feedback,
+      navigationOptions: ({navigation}) => ({
+        title: `Feedback`,
         headerRight: () =>  <TouchableOpacity onPress={() => navigation.navigate("AppHome")}>
         <img src = {home} width={50} height={50}/>
       </TouchableOpacity>
