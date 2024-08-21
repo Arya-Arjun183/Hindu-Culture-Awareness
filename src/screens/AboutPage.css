@@ -1,0 +1,82 @@
+.about-page {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .about-header {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  .about-header p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .mission-section,
+  .team-section,
+  .values-section {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .mission-section h2,
+  .team-section h2,
+  .values-section h2 {
+    border-bottom: 2px solid #e2e2e2;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  .team-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+  }
+  
+  .member-info h3 {
+    margin: 0;
+  }
+  
+  .values-section ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+  }
+  
+  .about-footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    margin-top: 2rem;
+  }
+  
+  .about-footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .about-footer a:hover {
+    text-decoration: underline;
+  }
