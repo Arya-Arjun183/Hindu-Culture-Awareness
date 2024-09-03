@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         fontSize: 45,
         fontFamily: 'Georgia',
         textAlign:'center',
-        color: 'blue',
+        color: '#ff8c04',
     },
     imageStyle: {
         textAlign:'center',

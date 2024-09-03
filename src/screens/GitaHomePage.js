@@ -1455,7 +1455,7 @@ const styles = StyleSheet.create({
   },
   textButton:{
     fontSize: 40,
-    color: 'blue',
+    color: '#ff8c04',
     margin: 15,
     textAlign:'center',
     fontFamily:'EB Garamond',

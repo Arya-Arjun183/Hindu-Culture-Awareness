@@ -25,8 +25,8 @@ const AboutPage = () => {
             <div className="member-info">
                 <h3>Arjun Arya</h3>
                 <p>Founder & CEO</p>
-                <p>Arjun Arya is passionate about bridging cultures and has been working on this app for four years. His vision drives our app forward.
-                    He is currently a senior at Bellarmine High School in California.
+                <p>Arjun Arya is passionate about bridging cultures and he founded Ananth in December, 2021. His vision drives our app forward.
+                    He is currently a senior at High School in California.
                 </p>
             </div>
             </div>
@@ -44,7 +44,7 @@ const AboutPage = () => {
         </section>
 
         <footer className="about-footer">
-            <p>Interested in learning more? <a href="mailto:arya.arjun183@gmail.com" target="_blank" rel="noopener noreferrer">Contact us</a> or follow us on <a href="https://twitter.com/cultureconnect" target="_blank" rel="noopener noreferrer">Twitter</a> and <a href="https://instagram.com/cultureconnect" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>
+            <p>Interested in learning more? <a href="mailto:arya.arjun183@gmail.com" target="_blank" rel="noopener noreferrer">Contact us</a> or follow us on <a href="https://twitter.com/ananthapp2" target="_blank" rel="noopener noreferrer">Twitter</a> and <a href="https://instagram.com/ananthapp2" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>
         </footer>
         </div>
     );

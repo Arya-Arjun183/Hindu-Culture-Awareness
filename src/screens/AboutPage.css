@@ -14,6 +14,7 @@
   .about-header h1 {
     margin: 0;
     font-size: 2.5rem;
+    color: #ff8c04;
   }
   
   .about-header p {
@@ -36,6 +37,7 @@
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
     font-size: 2rem;
+    color: #ff8c04;
   }
   
   .team-section {

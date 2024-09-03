@@ -25,7 +25,7 @@ import chapter16 from './gita-translations-json/gita_chapter_16.json';
 import chapter17 from './gita-translations-json/gita_chapter_17.json';
 import chapter18 from './gita-translations-json/gita_chapter_18.json';
 
-const ENGLISH_TRANSLATION_HEADER = 'English Translation: \n';
+const ENGLISH_TRANSLATION_HEADER = 'English Translation \n';
 
 class Chapter_Template extends Component {
 
@@ -592,7 +592,7 @@ const styles = StyleSheet.create({
 		fontStyle: 'italic',
 	},
 	textStyleHeader:{
-		color: 'blue',
+		color: '#ff8c04',
 		fontFamily: 'Helvetica',
 		justifyContent: 'space-between',
 		flex:1,
@@ -609,7 +609,7 @@ const styles = StyleSheet.create({
 		fontStyle: 'italic',
 		fontWeight: 'bold',
 		underline: {textDecorationLine: 'underline'},
-		color: 'blue',
+		color: '#ff8c04',
 	}
 });
 export default Chapter_Template;
