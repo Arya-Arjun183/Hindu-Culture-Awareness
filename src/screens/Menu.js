@@ -42,7 +42,7 @@ const Menu = (props) => {
             source = {interfaith}
         ></Image>
     <TouchableOpacity onPress={() => props.navigation.navigate("Verses_Translations")}>
-      <Text style={styles.textButton}>Geeta Verses and Translations</Text>
+      <Text style={styles.textButton}>Gita Verses and Translations</Text>
     </TouchableOpacity>
     <Image
       style={{

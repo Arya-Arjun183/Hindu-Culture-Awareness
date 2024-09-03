@@ -54,7 +54,7 @@ const navigator = createStackNavigator(
     Verses_Translations: {
       screen: Verses_Translations,
       navigationOptions: ({ navigation }) => ({
-        title: `Geeta Verses and Translations`,
+        title: `Gita Verses and Translations`,
         headerRight: () =>  <TouchableOpacity onPress={() => navigation.navigate("AppHome")}>
         <img src = {home} width={50} height={50}/>
       </TouchableOpacity>
