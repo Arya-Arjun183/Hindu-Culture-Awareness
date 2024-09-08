@@ -8,6 +8,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:1,
       verse:1,
+      last_verse:10,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/1_1-5.mp3",  
       title: "Chapter One Verses 1-10",
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/1_1.jpeg",
@@ -28,6 +29,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:1,
       verse:11,
+      last_verse:20,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/1_11-15.mp3",  
       title: "Chapter One Verses 11-20",
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/1-10-20/Screen%20Shot%202022-06-24%20at%206.02.07%20PM.png",
@@ -48,6 +50,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:1,
       verse:21,
+      last_verse:30,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/1_21-25.mp3",  
       title: "Chapter One Verses 21-30",
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/1-20-30/Screen%20Shot%202022-06-24%20at%207.37.00%20PM.png",
@@ -68,6 +71,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:1,
       verse:31,
+      last_verse:40,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/1_31-35.mp3",  
       title: "Chapter One - Verses 31-40",
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/gita-1-31-40/1_31.png",
@@ -89,6 +93,7 @@ const GitaHomePage = (props) => {
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/1_41-45.mp3",  
       chapter:1,
       verse:41,
+      last_verse:47,
       title: "Chapter One - Verses 41-47",
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/1-41-47/1_41.png",
       image2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter1/1-41-47/1_42.png",
@@ -108,6 +113,7 @@ const GitaHomePage = (props) => {
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_6-10.mp3",
       chapter:2,
       verse:1,
+      last_verse:10,
       title: "Chapter Two - Verses 1-10",
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_1.png",
       image2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_2.png",
@@ -127,6 +133,7 @@ const GitaHomePage = (props) => {
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_11-15.mp3", 
       chapter:2,
       verse:11,
+      last_verse:20,
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_16-20.mp3",  
       title: "Chapter Two - Verses 11-20",
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_11.png",
@@ -149,6 +156,7 @@ const GitaHomePage = (props) => {
       title: "Chapter Two - Verses 21-30",
       chapter:2,
       verse:21,
+      last_verse:30,
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_21.png",
       image2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_22.png",
       image3: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_23.png",
@@ -169,6 +177,7 @@ const GitaHomePage = (props) => {
       title: "Chapter Two - Verses 31-40",
       chapter:2,
       verse:31,
+      last_verse:40,
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_31.png",
       image2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_32.png",
       image3: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_33.png",
@@ -189,6 +198,7 @@ const GitaHomePage = (props) => {
       title: "Chapter Two - Verses 41-50",
       chapter:2,
       verse:41,
+      last_verse:50,
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_41.png",
       image2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_42.png",
       image3: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_43.png",
@@ -206,6 +216,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:2,
       verse:51,
+      last_verse:61,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_51-55.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/2_56-61.mp3",  
       title: "Chapter Two - Verses 51-61",
@@ -232,6 +243,7 @@ const GitaHomePage = (props) => {
       title: "Chapter Two - Verses 62-72",
       chapter:2,
       verse:62,
+      last_verse:72,
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_62.png",
       image2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_63.png",
       image3: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter2/2_64.png",
@@ -250,6 +262,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:3,
       verse:1,
+      last_verse:10,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_1-5.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_6-10.mp3",  
       title: "Chapter Three - Verses 1-10",
@@ -270,6 +283,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:3,
       verse:11,
+      last_verse:21,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_11-15.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_16-21.mp3",  
       title: "Chapter Three - Verses 11-21",
@@ -291,6 +305,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:3,
       verse:22,
+      last_verse:32,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_22-26.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_27-32.mp3",  
       title: "Chapter Three - Verses 22-32",
@@ -312,6 +327,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:3,
       verse:33,
+      last_verse:43,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_33-37.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/3_38-43.mp3",  
       title: "Chapter Three - Verses 33-43",
@@ -334,6 +350,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:4,
       verse:1,
+      last_verse:10,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_1-5.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_6-10.mp3",  
       title: "Chapter Four - Verses 1-10",
@@ -354,6 +371,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:4,
       verse:11,
+      last_verse:21,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_11-15.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_16-21.mp3",  
       title: "Chapter Four - Verses 11-21",
@@ -375,6 +393,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:4,
       verse:22,
+      last_verse:32,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_22-26.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_27-32.mp3",  
       title: "Chapter Four - Verses 22-32",
@@ -396,6 +415,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:4,
       verse:33,
+      last_verse:43,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_33-37.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_38-43.mp3",  
       title: "Chapter Four - Verses 33-43",
@@ -417,6 +437,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:5,
       verse:1,
+      last_verse:10,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/5_1-5.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/5_6-10.mp3",  
       title: "Chapter Five - Verses 1-10",
@@ -437,6 +458,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:5,
       verse:11,
+      last_verse:20,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/5_11-15.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/5_16-20.mp3",  
       title: "Chapter Five - Verses 11-20",
@@ -457,6 +479,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:5,
       verse:21,
+      last_verse:29,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/5_21-25.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/5_26-29.mp3",  
       title: "Chapter Five - Verses 21-29",
@@ -476,6 +499,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:6,
       verse:1,
+      last_verse:10,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_1-5.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_6-10.mp3",  
       title: "Chapter Six - Verses 1-10",
@@ -496,6 +520,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:6,
       verse:11,
+      last_verse:20,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_11-15.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_16-20.mp3",  
       title: "Chapter Six - Verses 11-20",
@@ -516,6 +541,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:6,
       verse:21,
+      last_verse:30,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_21-25.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_26-30.mp3",  
       title: "Chapter Six - Verses 21-30",
@@ -536,6 +562,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:6,
       verse:31,
+      last_verse:40,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_31-35.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_36-40.mp3",  
       title: "Chapter Six - Verses 31-40",
@@ -556,6 +583,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:6,
       verse:41,
+      last_verse:47,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_41-45.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/6_46-47.mp3",  
       title: "Chapter Six - Verses 41-47",
@@ -573,6 +601,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:7,
       verse:1,
+      last_verse:10,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/7_1-5.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/7_6-10.mp3",  
       title: "Chapter Seven - Verses 1-10",
@@ -593,6 +622,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
     chapter:7,
       verse:11,
+      last_verse:20,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/7_11-15.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/7_16-20.mp3",  
       title: "Chapter Seven - Verses 11-20",
@@ -613,6 +643,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:7,
       verse:21,
+      last_verse:30,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/7_21-25.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/7_26-30.mp3",  
       title: "Chapter Seven - Verses 21-30",
@@ -633,6 +664,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:8,
       verse:1,
+      last_verse:10,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/8_1-5.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/8_6-10.mp3",  
       title: "Chapter Eight - Verses 1-10",
@@ -653,6 +685,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
     chapter:8,
       verse:11,
+      last_verse:20,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/8_11-15.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/8_16-20.mp3",  
       title: "Chapter Eight - Verses 11-20",
@@ -673,6 +706,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:8,
       verse:21,
+      last_verse:28,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/8_21-25.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/8_26-28.mp3",  
       title: "Chapter Eight - Verses 21-28",
@@ -691,6 +725,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:9,
       verse:1,
+      last_verse:10,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/9_1-5.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/9_6-10.mp3",  
       title: "Chapter Nine - Verses 1-10",
@@ -711,6 +746,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
     chapter:9,
       verse:11,
+      last_verse:20,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/9_11-15.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/9_16-20.mp3",  
       title: "Chapter Nine - Verses 11-20",
@@ -731,6 +767,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:9,
       verse:21,
+      last_verse:30,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/9_21-25.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/9_26-30.mp3",  
       title: "Chapter Nine - Verses 21-30",
@@ -750,7 +787,8 @@ const GitaHomePage = (props) => {
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:9,
-      verse:21,
+      verse:31,
+      last_verse:34,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/9_31-34.mp3",  
       title: "Chapter Nine - Verses 31-34",
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter9/9_31.png",
@@ -764,6 +802,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:10,
       verse:1,
+      last_verse:10,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/10_1-5.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/10_6-10.mp3",  
       title: "Chapter Ten - Verses 1-10",
@@ -784,6 +823,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:10,
       verse:11,
+      last_verse:20,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/10_11-15.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/10_16-20.mp3",  
       title: "Chapter Ten - Verses 11-20",
@@ -804,6 +844,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:10,
       verse:21,
+      last_verse:30,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/10_21-25.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/10_26-30.mp3",  
       title: "Chapter Ten - Verses 21-30",
@@ -824,6 +865,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:10,
       verse:31,
+      last_verse:40,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/10_31-35.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/10_36-40.mp3",  
       title: "Chapter Ten - Verses 31-40",
@@ -844,6 +886,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:10,
       verse:41,
+      last_verse:42,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/10_41-42.mp3",
       title: "Chapter Ten - Verses 41-42",
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter10/10_41.png",
@@ -855,6 +898,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:11,
       verse:1,
+      last_verse:10,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/11_1-5.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/11_6-10.mp3",  
       title: "Chapter Eleven - Verses 1-10",
@@ -875,6 +919,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:11,
       verse:11,
+      last_verse:20,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/11_11-15.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/11_16-20.mp3",  
       title: "Chapter Eleven - Verses 11-20",
@@ -895,6 +940,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:11,
       verse:21,
+      last_verse:30,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/11_21-25.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/11_26-30.mp3",  
       title: "Chapter Eleven - Verses 21-30",
@@ -915,6 +961,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:11,
       verse:31,
+      last_verse:40,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/11_31-35.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/11_36-40.mp3",  
       title: "Chapter Eleven - Verses 31-40",
@@ -935,6 +982,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:11,
       verse:41,
+      last_verse:50,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/11_41-45.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/11_46-50.mp3",  
       title: "Chapter Eleven - Verses 41-50",
@@ -955,6 +1003,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:11,
       verse:51,
+      last_verse:55,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/11_51-55.mp3",  
       title: "Chapter Eleven - Verses 51-55",
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter11/11_51.png",
@@ -969,6 +1018,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:12,
       verse:1,
+      last_verse:10,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/12_1-5.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/12_6-10.mp3",  
       title: "Chapter Twelve - Verses 1-10",
@@ -989,6 +1039,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:12,
       verse:11,
+      last_verse:20,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/12_11-15.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/12_16-20.mp3",  
       title: "Chapter Twelve - Verses 11-20",
@@ -1009,6 +1060,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:13,
       verse:1,
+      last_verse:10,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/13_1-5.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/13_6-10.mp3",  
       title: "Chapter Thirteen - Verses 1-10",
@@ -1029,6 +1081,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:13,
       verse:11,
+      last_verse:20,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/13_11-15.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/13_16-20.mp3",  
       title: "Chapter Thirteen - Verses 11-20",
@@ -1049,6 +1102,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:13,
       verse:21,
+      last_verse:30,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/13_21-25.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/13_26-30.mp3",  
       title: "Chapter Thirteen - Verses 21-30",
@@ -1069,6 +1123,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:13,
       verse:31,
+      last_verse:35,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/13_31-35.mp3",
       title: "Chapter Thirteen - Verses 31-35",
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter13/13_31.png",
@@ -1083,6 +1138,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:14,
       verse:1,
+      last_verse:10,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/14_1-5.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/14_6-10.mp3",  
       title: "Chapter Fourteen - Verses 1-10",
@@ -1103,6 +1159,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:14,
       verse:11,
+      last_verse:20,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/14_11-15.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/14_16-20.mp3",  
       title: "Chapter Fourteen - Verses 11-20",
@@ -1123,6 +1180,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:14,
       verse:21,
+      last_verse:27,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/14_21-25.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/14_26-27.mp3",  
       title: "Chapter Fourteen - Verses 21-27",
@@ -1140,6 +1198,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:15,
       verse:1,
+      last_verse:10,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/15_1-5.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/15_6-10.mp3",  
       title: "Chapter Fifteen - Verses 1-10",
@@ -1160,6 +1219,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:15,
       verse:11,
+      last_verse:19,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/15_11-15.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/15_16-19.mp3",  
       title: "Chapter Fifteen - Verses 11-29",
@@ -1179,6 +1239,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:16,
       verse:1,
+      last_verse:10,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/16_1-5.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/16_6-10.mp3",  
       title: "Chapter Sixteen - Verses 1-10",
@@ -1199,6 +1260,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:16,
       verse:11,
+      last_verse:20,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/16_11-15.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/16_16-20.mp3",  
       title: "Chapter Sixteen - Verses 11-20",
@@ -1219,8 +1281,9 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:16,
       verse:21,
+      last_verse:24,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/16_21-24.mp3",
-      title: "Chapter Fourteen - Verses 21-24",
+      title: "Chapter Sixteen - Verses 21-24",
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter16/16_21.png",
       image2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter16/16_22.png",
       image3: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter16/16_23.png",
@@ -1232,6 +1295,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:17,
       verse:1,
+      last_verse:10,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/17_1-5.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/17_6-10.mp3",  
       title: "Chapter Seventeen - Verses 1-10",
@@ -1252,6 +1316,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:17,
       verse:11,
+      last_verse:20,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/17_11-15.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/17_16-20.mp3",  
       title: "Chapter Seventeen - Verses 11-20",
@@ -1272,6 +1337,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:17,
       verse:21,
+      last_verse:29,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/17_21-25.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/17_26-28.mp3",  
       title: "Chapter Seventeen - Verses 21-28",
@@ -1291,6 +1357,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:18,
       verse:1,
+      last_verse:10,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/18_1-5.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/18_6-10.mp3",  
       title: "Chapter Eighteen - Verses 1-10",
@@ -1311,6 +1378,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:18,
       verse:11,
+      last_verse:20,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/18_11-15.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/18_16-20.mp3",  
       title: "Chapter Eighteen - Verses 11-20",
@@ -1331,6 +1399,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:18,
       verse:21,
+      last_verse:30,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/18_21-25.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/18_26-30.mp3",  
       title: "Chapter Eighteen - Verses 21-30",
@@ -1351,6 +1420,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:18,
       verse:31,
+      last_verse:40,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/18_31-35.mp3",
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/18_36-40.mp3",
       title: "Chapter Eighteen - Verses 31-40",
@@ -1371,6 +1441,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:18,
       verse:41,
+      last_verse:50,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/18_41-45.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/18_46-50.mp3",  
       title: "Chapter Eighteen - Verses 41-50",
@@ -1391,6 +1462,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:18,
       verse:51,
+      last_verse:60,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/18_51-55.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/18_56-60.mp3",  
       title: "Chapter Eighteen - Verses 51-60",
@@ -1411,6 +1483,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:18,
       verse:61,
+      last_verse:70,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/18_61-65.mp3",
       url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/18_66-70.mp3",  
       title: "Chapter Eighteen - Verses 61-70",
@@ -1431,6 +1504,7 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:18,
       verse:71,
+      last_verse:78,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/18_71-75.mp3",
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/18_76-78.mp3",
       title: "Chapter Eighteen - Verses 71-78",
