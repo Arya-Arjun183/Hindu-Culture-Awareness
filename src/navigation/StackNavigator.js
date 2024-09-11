@@ -18,6 +18,8 @@ import InterFaith_Template from "../screens/InterFaith_Template";
 import Music from "../screens/Music";
 import Music_Template from "../screens/Music_Template";
 import AboutPage from "../screens/AboutPage";
+import AboutUs from "../screens/AboutUs";
+import Feedback from "../screens/Feedback";
 
 import { Image, TouchableOpacity} from 'react-native';
 //import home from './/assets/favicon.png';
@@ -154,6 +156,15 @@ const navigator = createStackNavigator(
       screen: AboutPage,
       navigationOptions: ({navigation}) => ({
         title: `About Us`,
+        headerRight: () =>  <TouchableOpacity onPress={() => navigation.navigate("AppHome")}>
+        <img src = {home} width={50} height={50}/>
+      </TouchableOpacity>
+      }),
+    },
+    Feedback:  {
+      screen: Feedback,
+      navigationOptions: ({navigation}) => ({
+        title: `Feedback`,
         headerRight: () =>  <TouchableOpacity onPress={() => navigation.navigate("AppHome")}>
         <img src = {home} width={50} height={50}/>
       </TouchableOpacity>

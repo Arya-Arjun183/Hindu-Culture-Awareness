@@ -109,6 +109,9 @@ const Menu = (props) => {
       <TouchableOpacity onPress={()=>props.navigation.navigate("AboutUs")}>
         <Text style={styles.textButton}>About Us</Text>
       </TouchableOpacity>
+      <TouchableOpacity onPress={() => props.navigation.navigate("Feedback")}>
+        <Text style={styles.textButton}>Feedback</Text>
+      </TouchableOpacity>
   </View>
   );
 };
