@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 
 // Import your audio file
-import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
+import { Text, StyleSheet, View, Button, Image, TouchableOpacity } from 'react-native';
 import { ScrollView } from "react-native-gesture-handler";
-import play from './icons/play-icon.jpg';
-import stop from './icons/stop-icon.jpg';
 
 import chapter1 from './gita-translations-json/gita_chapter_1.json';
 import chapter2 from './gita-translations-json/gita_chapter_2.json';
@@ -25,13 +23,13 @@ import chapter16 from './gita-translations-json/gita_chapter_16.json';
 import chapter17 from './gita-translations-json/gita_chapter_17.json';
 import chapter18 from './gita-translations-json/gita_chapter_18.json';
 
-const ENGLISH_TRANSLATION_HEADER = 'English Translation: \n';
+const ENGLISH_TRANSLATION_HEADER = 'English Translation \n';
 
 class Chapter_Template extends Component {
 
-	audio1 = this.props.navigation.getParam('url1', 'https://drive.google.com/uc?id=1heYIXcA6ZAmnGhhhszNOr30VXZ0OkPqG&export=download');
+	audio1 = this.props.navigation.getParam('url1', 'error');
 	title = this.props.navigation.getParam('title', 'Error!');
-	audio2 = this.props.navigation.getParam('url2','https://drive.google.com/uc?id=1heYIXcA6ZAmnGhhhszNOr30VXZ0OkPqG&export=download');
+	audio2 = this.props.navigation.getParam('url2','error');
 	image1 = this.props.navigation.getParam('image1', 'error');
 	image2 = this.props.navigation.getParam('image2', 'error');
 	image3 = this.props.navigation.getParam('image3', 'error');
@@ -45,6 +43,7 @@ class Chapter_Template extends Component {
 	image11 = this.props.navigation.getParam('image11', 'error');
 	chapterNum = this.props.navigation.getParam('chapter', 1);
 	verse = this.props.navigation.getParam('verse', 1);
+	last_verse = this.props.navigation.getParam('last_verse', 5);
 	state = {
 		isPlaying1: false,
 		isPlaying2:false,
@@ -54,7 +53,6 @@ class Chapter_Template extends Component {
 	mainFile = "";
 	keyToFind = "1.1";
 	translation = chapter1.keyToFind;
-
 	componentDidMount() {
 	}
 	
@@ -144,431 +142,149 @@ class Chapter_Template extends Component {
 		// Change the state of song
 		this.setState({ isPlaying2: !isPlaying2 });
 	};
-		render() {
-			if (this.image5 == 'error'){
-				return (
-					<ScrollView style={styles.container}>
-						<Text style={styles.textStyleHeader}>Part 1</Text>
-						<button>
-							<img src={play} width={50} height={50} onClick={this.playPauseButton1}/>
-							<img src={stop} width={50} height={50} onClick={this.stopAudio1}/>
-						</button>
-						<img src = {this.image1}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse)}
-						</Text>
-						<img src = {this.image2}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+1)}
-						</Text>
-						<img src = {this.image3}/>
-						<Text style = {styles.textStyle}>
-						<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+2)}
-						</Text>
-						<img src = {this.image4}/>
-						<Text style = {styles.textStyle}>
-						<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+3)}
-						</Text>
-					</ScrollView>
-				)
-			}
-			if (this.image6 == 'error'){
-				return (
-					<ScrollView style={styles.container}>
-						<Text style={styles.textStyleHeader}>Part 1</Text>
-						<button>
-							<img src={play} width={50} height={50} onClick={this.playPauseButton1}/>
-							<img src={stop} width={50} height={50} onClick={this.stopAudio1}/>
-						</button>
-						<img src = {this.image1}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse)}
-						</Text>
-						<img src = {this.image2}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+1)}
-						</Text>
-						<img src = {this.image3}/>
-						<Text style = {styles.textStyle}>
-						<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+2)}
-						</Text>
-						<img src = {this.image4}/>
-						<Text style = {styles.textStyle}>
-						<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+3)}
-						</Text>
+	render() {
+		var header1 = "Verses " + this.verse + " to "
+		var header2 = ""
+		if (this.audio2 == "error")
+			header1 += this.last_verse;
+		else
+			header1 += (this.verse+4)
+			header2 = "Verses " + (this.verse+5) + " to " + this.last_verse;
+
+		return (
+			<ScrollView>
+				{/* Show state of song on website */}
+				<Text style={styles.textStyleHeader}>{header1}</Text>
+				<View style={styles.container}>
+					<View style={styles.buttonContainer}>
+						<TouchableOpacity style={styles.buttonStyle} onPress={this.playPauseButton1}>
+						<Image
+						source={require('./icons/icons8-circled-play-100.png')} // image path
+						style={styles.image}/>
+						</TouchableOpacity>
+						<TouchableOpacity style={styles.buttonStyle} onPress={this.stopAudio1}>
+						<Image
+						source={require('./icons/icons8-stop-circled-100.png')} // image path
+						style={styles.image}/>
+						</TouchableOpacity>
+					</View>
+				</View>
+				<img src = {this.image1}/>
+				<Text style = {styles.textStyle}>
+					<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
+					{this.getTranslation(this.chapterNum,this.verse)}
+				</Text>
+				<img src = {this.image2}/>
+				<Text style = {styles.textStyle}>
+					<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
+					{this.getTranslation(this.chapterNum,this.verse+1)}
+				</Text>
+				<img src = {this.image3}/>
+				<Text style = {styles.textStyle}>
+				<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
+					{this.getTranslation(this.chapterNum,this.verse+2)}
+				</Text>
+				<img src = {this.image4}/>
+				<Text style = {styles.textStyle}>
+				<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
+					{this.getTranslation(this.chapterNum,this.verse+3)}
+				</Text>
+				<View>
+					{this.image5 != 'error'? (
+						<>
 						<img src = {this.image5}/>
 						<Text style = {styles.textStyle}>
 							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+4)}
 						</Text>
-					</ScrollView>
-				)
-			}
-			if (this.image7 == 'error'){
-				return (
-					<ScrollView style={styles.container}>
-						<Text style={styles.textStyleHeader}>Part 1</Text>
-						<button>
-							<img src={play} width={50} height={50} onClick={this.playPauseButton1}/>
-							<img src={stop} width={50} height={50} onClick={this.stopAudio1}/>
-						</button>
-						<img src = {this.image1}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse)}
-						</Text>
-						<img src = {this.image2}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+1)}
-						</Text>
-						<img src = {this.image3}/>
-						<Text style = {styles.textStyle}>
-						<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+2)}
-						</Text>
-						<img src = {this.image4}/>
-						<Text style = {styles.textStyle}>
-						<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+3)}
-						</Text>
-						<img src = {this.image5}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+4)}
-						</Text>
-						<Text style={styles.textStyleHeader}>Part 2</Text>
-						
-						<button>
-						<img src={play} width={50} height={50} onClick={this.playPauseButton2}/>
-						<img src={stop} width={50} height={50} onClick={this.stopAudio2}/>
-						</button>
+						</>
+					) : null}
+				</View>
+				<View>
+					{this.image6 != 'error'? (
+						<>
+						<Text style={styles.textStyleHeader}>{header2}</Text>
+						<View style={styles.container}>
+							<View style={styles.buttonContainer}>
+								<TouchableOpacity style={styles.buttonStyle} onPress={this.playPauseButton2}>
+								<Image
+								source={require('./icons/icons8-circled-play-100.png')} // image path
+								style={styles.image}/>
+								</TouchableOpacity>
+								<TouchableOpacity style={styles.buttonStyle} onPress={this.stopAudio2}>
+								<Image
+								source={require('./icons/icons8-stop-circled-100.png')} // image path
+								style={styles.image}/>
+								</TouchableOpacity>
+							</View>
+						</View>
 						<img src = {this.image6}/>
 						<Text style = {styles.textStyle}>
 							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+5)}
-						</Text>
-					</ScrollView>
-				)
-			}
-			if (this.image8 == 'error'){
-				return (
-					<ScrollView style={styles.container}>
-						<Text style={styles.textStyleHeader}>Part 1</Text>
-						<button>
-							<img src={play} width={50} height={50} onClick={this.playPauseButton1}/>
-							<img src={stop} width={50} height={50} onClick={this.stopAudio1}/>
-						</button>
-						<img src = {this.image1}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse)}
-						</Text>
-						<img src = {this.image2}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+1)}
-						</Text>
-						<img src = {this.image3}/>
-						<Text style = {styles.textStyle}>
-						<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+2)}
-						</Text>
-						<img src = {this.image4}/>
-						<Text style = {styles.textStyle}>
-						<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+3)}
-						</Text>
-						<img src = {this.image5}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+4)}
-						</Text>
-						<Text style={styles.textStyleHeader}>Part 2</Text>
-						
-						<button>
-						<img src={play} width={50} height={50} onClick={this.playPauseButton2}/>
-						<img src={stop} width={50} height={50} onClick={this.stopAudio2}/>
-						</button>
-						<img src = {this.image6}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+5)}
-						</Text>
+				</Text>
+						</>
+					) : null}
+				</View>
+				<View>
+					{this.image7 != 'error'? (
+						<>
 						<img src = {this.image7}/>
 						<Text style = {styles.textStyle}>
 							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+6)}
 						</Text>
-					</ScrollView>
-				)
-			}
-			if (this.image9 == 'error'){
-				return (
-					<ScrollView style={styles.container}>
-						<Text style={styles.textStyleHeader}>Part 1</Text>
-						<button>
-							<img src={play} width={50} height={50} onClick={this.playPauseButton1}/>
-							<img src={stop} width={50} height={50} onClick={this.stopAudio1}/>
-						</button>
-						<img src = {this.image1}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse)}
-						</Text>
-						<img src = {this.image2}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+1)}
-						</Text>
-						<img src = {this.image3}/>
-						<Text style = {styles.textStyle}>
-						<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+2)}
-						</Text>
-						<img src = {this.image4}/>
-						<Text style = {styles.textStyle}>
-						<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+3)}
-						</Text>
-						<img src = {this.image5}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+4)}
-						</Text>
-						<Text style={styles.textStyleHeader}>Part 2</Text>
-						<button>
-						<img src={play} width={50} height={50} onClick={this.playPauseButton2}/>
-						<img src={stop} width={50} height={50} onClick={this.stopAudio2}/>
-						</button>
-						<img src = {this.image6}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+5)}
-						</Text>
-						<img src = {this.image7}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+6)}
-						</Text>
+						</>
+					) : null}
+				</View>
+					<View>
+					{this.image8 != 'error'? (
+						<>
 						<img src = {this.image8}/>
 						<Text style = {styles.textStyle}>
 							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+7)}
 						</Text>
-					</ScrollView>
-				)
-			}
-			if (this.image10 == 'error'){
-				return (
-					<ScrollView style={styles.container}>
-						<Text style={styles.textStyleHeader}>Part 1</Text>
-						<button>
-							<img src={play} width={50} height={50} onClick={this.playPauseButton1}/>
-							<img src={stop} width={50} height={50} onClick={this.stopAudio1}/>
-						</button>
-						<img src = {this.image1}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse)}
-						</Text>
-						<img src = {this.image2}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+1)}
-						</Text>
-						<img src = {this.image3}/>
-						<Text style = {styles.textStyle}>
-						<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+2)}
-						</Text>
-						<img src = {this.image4}/>
-						<Text style = {styles.textStyle}>
-						<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+3)}
-						</Text>
-						<img src = {this.image5}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+4)}
-						</Text>
-						<Text style={styles.textStyleHeader}>Part 2</Text>
-						
-						<button>
-						<img src={play} width={50} height={50} onClick={this.playPauseButton2}/>
-						<img src={stop} width={50} height={50} onClick={this.stopAudio2}/>
-						</button>
-						<img src = {this.image6}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+5)}
-						</Text>
-						<img src = {this.image7}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+6)}
-						</Text>
-						<img src = {this.image8}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+7)}
-						</Text>
+						</>
+					) : null}
+				</View>
+					<View>
+					{this.image9 != 'error'? (
+						<>
 						<img src = {this.image9}/>
 						<Text style = {styles.textStyle}>
 							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+8)}
 						</Text>
-					</ScrollView>
-				)
-			}
-			if (this.image11=='error'){
-				return (
-					<ScrollView style={styles.container}>
-						<Text style={styles.textStyleHeader}>Part 1</Text>
-						<button>
-							<img src={play} width={50} height={50} onClick={this.playPauseButton1}/>
-							<img src={stop} width={50} height={50} onClick={this.stopAudio1}/>
-						</button>
-						<img src = {this.image1}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse)}
-						</Text>
-						<img src = {this.image2}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+1)}
-						</Text>
-						<img src = {this.image3}/>
-						<Text style = {styles.textStyle}>
-						<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+2)}
-						</Text>
-						<img src = {this.image4}/>
-						<Text style = {styles.textStyle}>
-						<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+3)}
-						</Text>
-						<img src = {this.image5}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+4)}
-						</Text>
-						<Text style={styles.textStyleHeader}>Part 2</Text>
-						
-						<button>
-						<img src={play} width={50} height={50} onClick={this.playPauseButton2}/>
-						<img src={stop} width={50} height={50} onClick={this.stopAudio2}/>
-						</button>
-						<img src = {this.image6}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+5)}
-						</Text>
-						<img src = {this.image7}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+6)}
-						</Text>
-						<img src = {this.image8}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+7)}
-						</Text>
-						<img src = {this.image9}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+8)}
-						</Text>
+						</>
+					) : null}
+				</View>
+					<View>
+					{this.image10 != 'error'? (
+						<>
 						<img src = {this.image10}/>
 						<Text style = {styles.textStyle}>
 							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+9)}
 						</Text>
-					</ScrollView>
-				)
-			}else {
-				return (
-					<ScrollView>
-						{/* Show state of song on website */}
-						<Text style={styles.textStyleHeader}>Part 1</Text>
-						<button>
-							<img src={play} width={50} height={50} onClick={this.playPauseButton1}/>
-							<img src={stop} width={50} height={50} onClick={this.stopAudio1}/>
-						</button>
-						<img src = {this.image1}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse)}
-						</Text>
-						<img src = {this.image2}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+1)}
-						</Text>
-						<img src = {this.image3}/>
-						<Text style = {styles.textStyle}>
-						<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+2)}
-						</Text>
-						<img src = {this.image4}/>
-						<Text style = {styles.textStyle}>
-						<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+3)}
-						</Text>
-						<img src = {this.image5}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+4)}
-						</Text>
-						<Text style={styles.textStyleHeader}>Part 2</Text>
-						<button>
-						<img src={play} width={50} height={50} onClick={this.playPauseButton2}/>
-						<img src={stop} width={50} height={50} onClick={this.stopAudio2}/>
-						</button>
-						<img src = {this.image6}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+5)}
-						</Text>
-						<img src = {this.image7}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+6)}
-						</Text>
-						<img src = {this.image8}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+7)}
-						</Text>
-						<img src = {this.image9}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+8)}
-						</Text>
-						<img src = {this.image10}/>
-						<Text style = {styles.textStyle}>
-							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-							{this.getTranslation(this.chapterNum,this.verse+9)}
-						</Text>
+						</>
+					) : null}
+				</View>
+					<View>
+					{this.image11 != 'error'? (
+						<>
 						<img src = {this.image11}/>
 						<Text style = {styles.textStyle}>
 							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+10)}
 						</Text>
-					</ScrollView>
-				)
-			}
+						</>
+					) : null}
+				</View>
+
+			</ScrollView>
+		)
 	}
-	
 }
 const styles = StyleSheet.create({
 	textStyle:{
@@ -592,12 +308,12 @@ const styles = StyleSheet.create({
 		fontStyle: 'italic',
 	},
 	textStyleHeader:{
-		color: 'blue',
+		color: '#ff8c04',
 		fontFamily: 'Helvetica',
 		justifyContent: 'space-between',
 		flex:1,
-		fontSize: 40,
-    	margin: 15,
+		fontSize: 30,
+		margin: 10,
     	textAlign:'center',
 	},
 	textStyleSmall:{
@@ -609,7 +325,28 @@ const styles = StyleSheet.create({
 		fontStyle: 'italic',
 		fontWeight: 'bold',
 		underline: {textDecorationLine: 'underline'},
-		color: 'blue',
-	}
+		color: '#ff8c04',
+	},
+	buttonStyle: {
+        width: 50, // Set your desired button width
+        height: 50, // Set your desired button height
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+	image: {
+        width: '100%',
+        height: '100%',
+        resizeMode: 'cover', // Cover the button area with the image
+    },
+	container: {
+        flex: 1,
+        justifyContent: 'center', // Center vertically
+        alignItems: 'center', // Center horizontally
+    },
+	buttonContainer: {
+        alignItems: 'center', // Center the button horizontally
+        marginVertical: 15, // Add vertical margin for spacing
+		flexDirection: 'row', // Arrange buttons in a row
+    },
 });
 export default Chapter_Template;

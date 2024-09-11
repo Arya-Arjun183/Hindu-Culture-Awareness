@@ -17,6 +17,7 @@ import InterFaith from "../screens/InterFaith";
 import InterFaith_Template from "../screens/InterFaith_Template";
 import Music from "../screens/Music";
 import Music_Template from "../screens/Music_Template";
+import AboutPage from "../screens/AboutPage";
 import AboutUs from "../screens/AboutUs";
 import Feedback from "../screens/Feedback";
 
@@ -55,7 +56,7 @@ const navigator = createStackNavigator(
     Verses_Translations: {
       screen: Verses_Translations,
       navigationOptions: ({ navigation }) => ({
-        title: `Verses and Translations`,
+        title: `Gita Verses and Translations`,
         headerRight: () =>  <TouchableOpacity onPress={() => navigation.navigate("AppHome")}>
         <img src = {home} width={50} height={50}/>
       </TouchableOpacity>
@@ -152,7 +153,7 @@ const navigator = createStackNavigator(
       }),
     },
     AboutUs:  {
-      screen: AboutUs,
+      screen: AboutPage,
       navigationOptions: ({navigation}) => ({
         title: `About Us`,
         headerRight: () =>  <TouchableOpacity onPress={() => navigation.navigate("AppHome")}>
