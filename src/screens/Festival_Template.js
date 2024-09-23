@@ -4,6 +4,7 @@ import TextToSpeech from './TextToSpeech';
 import { Component } from 'react/cjs/react.production.min';
 import festivalData from './festival-data/festivals.json';
 import festivalDatesData from './festival-data/dates.json'
+import styles from './Styles';
 
 class Festivals_Template extends Component{
     festivalName = this.props.navigation.getParam('Name', 'Diwali').toString();
@@ -42,21 +43,5 @@ class Festivals_Template extends Component{
         );
     }
 }
-
-const styles = StyleSheet.create({
-    dateText:{
-        fontSize: 30,
-        textAlign: 'center',
-        fontStyle:'italic',
-        fontFamily: 'Helvetica',
-        color: '#71797E',
-    },
-    mainText:{
-        fontSize: 30,
-        textAlign: 'center',
-        fontFamily: 'Helvetica',
-        color:'#007FFF',
-    }
-})
 
 export default Festivals_Template;

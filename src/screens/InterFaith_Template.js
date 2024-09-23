@@ -3,6 +3,7 @@ import { Text, StyleSheet, ScrollView, Button, TouchableOpacity } from 'react-na
 import { Component } from 'react/cjs/react.production.min';
 import interfaithData from './interfaith/interfaith.json';
 import TextToSpeech from './TextToSpeech';
+import styles from './Styles';
 
 class InterFaith_Template extends Component{
     factName = this.props.navigation.getParam('Name', 'Pluralism').toString();
@@ -20,14 +21,5 @@ class InterFaith_Template extends Component{
         );
     }
 }
-
-const styles = StyleSheet.create({
-    mainText:{
-        fontSize: 30,
-        textAlign: 'center',
-        fontFamily: 'Helvetica',
-        color:'#007FFF',
-    }
-})
 
 export default InterFaith_Template;

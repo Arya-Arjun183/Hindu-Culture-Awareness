@@ -1,9 +1,15 @@
 import React from 'react';
-import { Text, StyleSheet, ScrollView, Button, TouchableOpacity } from 'react-native';
+import { Text, StyleSheet, ScrollView, View, Image, TouchableOpacity } from 'react-native';
+import styles from './Styles';
+
+const gita = require('./icons/gita-icon.jpeg');
 
 const GitaHomePage = (props) => {
   return (
   <ScrollView>
+    <View style = {{justifyContent:'center',alignItems: 'center'}}>
+      <Image style={styles.imageStyle} source={gita}/>
+    </View>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:1,
@@ -1522,18 +1528,5 @@ const GitaHomePage = (props) => {
   </ScrollView>
   );
 };
-
-const styles = StyleSheet.create({
-  textTitle: {
-    fontSize: 50,
-  },
-  textButton:{
-    fontSize: 40,
-    color: '#ff8c04',
-    margin: 15,
-    textAlign:'center',
-    fontFamily:'EB Garamond',
-  },
-});
 
 export default GitaHomePage;

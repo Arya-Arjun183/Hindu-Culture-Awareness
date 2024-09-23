@@ -3,6 +3,7 @@ import { Text, StyleSheet, ScrollView, Button, TouchableOpacity, View } from 're
 import { Component } from 'react/cjs/react.production.min';
 import TextToSpeech from './TextToSpeech';
 import gods from './god-data/gods.json'
+import styles from './Styles';
 
 class Gods_Template extends Component{
     godName = this.props.navigation.getParam('Name', 'Vishnu');
@@ -58,26 +59,5 @@ class Gods_Template extends Component{
         );
     }
 }
-const styles = StyleSheet.create({
-    quote:{
-        fontSize: 25,
-        fontStyle:'italic',
-        fontFamily: 'Helvetica',
-        color: 'blue',
-        textAlign: 'center',
-    },
-    // title:{
-    //     fontSize: 50,
-    //     textAlign: 'center',
-    //     fontWeight: 'bold',
-    //     fontFamily: 'Helvetica',
-    //     color: 'blue',
-    // },
-    mainText:{
-        fontSize: 30,
-        textAlign: 'center',
-        fontFamily: 'Helvetica',
-        color:'#007FFF',
-    }
-})
+
 export default Gods_Template;

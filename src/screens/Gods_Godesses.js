@@ -1,5 +1,6 @@
 import React from 'react';
-import { Text, StyleSheet, View, FlatList, TouchableOpacity} from 'react-native';
+import { Text, StyleSheet, View, TouchableOpacity} from 'react-native';
+import styles from './Styles';
 
 const Gods_Godesses = (props) =>{
     return (
@@ -38,22 +39,11 @@ const Gods_Godesses = (props) =>{
             <TouchableOpacity onPress ={() => props.navigation.navigate("Gods_Template", {Name: "Shakti"})}>
                 <Text style = {styles.textStyle}>Shakti</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress ={() => props.navigation.navigate("Gods_Template", {Name: "Shakti"})}>
+            <TouchableOpacity onPress ={() => props.navigation.navigate("Gods_Template", {Name: "Kartikeya"})}>
                 <Text style = {styles.textStyle}>Kartikeya</Text>
             </TouchableOpacity>
         </View>
     );
 };
-const styles = StyleSheet.create({
-    textStyle:{
-        fontSize:50,
-        fontFamily: 'EB Garamond',
-        textAlign: 'center',
-        color: '#ff8c04',
-    }, textStyleHeader:{
-        textAlign: 'center',
-        fontFamily: 'EB Garamond',
-      }
-});
 
 export default Gods_Godesses;

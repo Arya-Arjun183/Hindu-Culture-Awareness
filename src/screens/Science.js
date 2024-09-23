@@ -1,5 +1,7 @@
 import React from 'react';
 import { Text, StyleSheet, View, TouchableOpacity } from 'react-native';
+import styles from './Styles';
+
 const Science = (props) => {
     return (
       <View>
@@ -34,14 +36,5 @@ const Science = (props) => {
       </View>
     );
   };
-  
-  const styles = StyleSheet.create({
-    textStyle:{
-      fontSize:50,
-      fontFamily: 'EB Garamond',
-      textAlign: 'center',
-      color: '#ff8c04',
-  },
-  });
   
   export default Science;

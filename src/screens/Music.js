@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
+import styles from './Styles';
 
 const Music = (props) => {
     return(
@@ -36,13 +37,4 @@ const Music = (props) => {
     );
 }
 
-const styles = StyleSheet.create({
-    textStyle:{
-      fontSize:50,
-      fontFamily: 'EB Garamond',
-      textAlign: 'center',
-      color: '#ff8c04',
-  },
-  });
-
-  export default Music;
+export default Music;

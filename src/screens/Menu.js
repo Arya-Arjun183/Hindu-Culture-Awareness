@@ -1,11 +1,12 @@
 import React from 'react';
-import { Text, StyleSheet, View, Button, TouchableOpacity, Image } from 'react-native';
+import { Text, View, TouchableOpacity, Image } from 'react-native';
 const om = require('./icons/om.png');
 const verses = require('./icons/verses.jpeg');
 const festivals = require('./icons/festivals.jpeg');
 const scienceImg = require('./icons/iron-pillar.jpeg');
 const interfaith = require('./icons/interfaith.png');
 const music = require('./icons/music.jpeg');
+import styles from './Styles';
 
 const Menu = (props) => {
 
@@ -41,7 +42,7 @@ const Menu = (props) => {
             }}
             source = {interfaith}
         ></Image>
-    <TouchableOpacity onPress={() => props.navigation.navigate("Verses_Translations")}>
+    <TouchableOpacity onPress={() => props.navigation.navigate("GitaHomePage")}>
       <Text style={styles.textButton}>Gita Verses and Translations</Text>
     </TouchableOpacity>
     <Image
@@ -115,27 +116,5 @@ const Menu = (props) => {
   </View>
   );
 };
-
-const styles = StyleSheet.create({
-  textTitle: {
-    fontSize: 50,
-    fontFamily: 'EB Garamond',
-    textAlign:'center',
-    margin: 20,
-  },
-  textInfo: {
-    fontSize: 35,
-    fontFamily: 'cursive',
-    textAlign: 'center',
-    margin: 20
-  },
-  textButton:{
-    fontSize: 40,
-    color: '#ff8c04',
-    fontFamily:'EB Garamond',
-    textAlign:'center',
-    margin: 20,
-  },
-});
 
 export default Menu;

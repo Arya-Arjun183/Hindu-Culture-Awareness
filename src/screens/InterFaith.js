@@ -1,5 +1,6 @@
 import React from 'react';
-import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
+import { Text, View, TouchableOpacity } from 'react-native';
+import styles from './Styles';
 
 const InterFaith = (props) =>{
     return (
@@ -23,19 +24,5 @@ const InterFaith = (props) =>{
         </View>
     );
 };
-const styles = StyleSheet.create({
-    text: {
-      fontSize: 30,
-      fontFamily: 'Georgia',
-      textAlign: 'center',
-      color: 'blue',
-    },
-    textStyle:{
-      fontSize:50,
-      fontFamily: 'EB Garamond',
-      textAlign: 'center',
-      color: '#ff8c04',
-  },
-  });
 
-  export default InterFaith;
+export default InterFaith;
