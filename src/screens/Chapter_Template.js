@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import { Text, StyleSheet, View, Image, TouchableOpacity, Dimensions} from 'react-native';
 import { ScrollView } from "react-native-gesture-handler";
 const { width } = Dimensions.get('window');
-var scale = (Math.sqrt(width/1728)); // Base width for scaling
+var scale = (Math.pow(width/1728, 0.4)); // Base width for scaling
 
 
 import chapter1 from './gita-translations-json/gita_chapter_1.json';
@@ -343,10 +343,11 @@ const styles = StyleSheet.create({
 		color: '#ff8c04',
 	},
 	buttonStyle: {
-        width: 50*scale, // Set your desired button width
-        height: 50*scale, // Set your desired button height
+        width: 100*scale, // Set your desired button width
+        height: 100*scale, // Set your desired button height
         justifyContent: 'center',
         alignItems: 'center',
+		marginHorizontal: 15*scale, // Optional: Adds margin between buttons
     },
 	image: {
         width: '100%',
@@ -357,10 +358,12 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center', // Center vertically
         alignItems: 'center', // Center horizontally
+		marginVertical: 15*scale, // Optional: Adds margin between buttons
     },
 	buttonContainer: {
+		flex: 1,
         alignItems: 'center', // Center the button horizontally
-        marginVertical: 15*scale, // Add vertical margin for spacing
+        marginVertical: 5*scale, // Add vertical margin for spacing
 		flexDirection: 'row', // Arrange buttons in a row
 		justifyContent: 'space-between', // Creates space between buttons
     },

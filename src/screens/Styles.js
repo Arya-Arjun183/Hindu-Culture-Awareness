@@ -1,8 +1,7 @@
 import { StyleSheet, Dimensions} from 'react-native';
 
 const { width } = Dimensions.get('window');
-var scale = (Math.sqrt(width/1728)); // Base width for scaling
-
+var scale = (Math.pow(width/1728, 0.4)); // Base width for scaling
 const styles = StyleSheet.create({
     background:{
       color:'#007FFF',
