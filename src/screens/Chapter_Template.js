@@ -6,6 +6,7 @@ import { ScrollView } from "react-native-gesture-handler";
 const { width } = Dimensions.get('window');
 var scale = (Math.sqrt(width/1728)); // Base width for scaling
 
+
 import chapter1 from './gita-translations-json/gita_chapter_1.json';
 import chapter2 from './gita-translations-json/gita_chapter_2.json';
 import chapter3 from './gita-translations-json/gita_chapter_3.json';
@@ -26,6 +27,9 @@ import chapter17 from './gita-translations-json/gita_chapter_17.json';
 import chapter18 from './gita-translations-json/gita_chapter_18.json';
 
 const ENGLISH_TRANSLATION_HEADER = 'English Translation \n';
+const imagePause = require('./icons/icons8-pause-button-96.png');
+const imagePlay = require('./icons/icons8-circled-play-100.png');
+const imageStop = require('./icons/icons8-stop-circled-100.png');
 
 class Chapter_Template extends Component {
 
@@ -61,12 +65,6 @@ class Chapter_Template extends Component {
 	componentWillUnmount() {
 		this.stopAudio1();
 		this.stopAudio2();
-	}
-		
-	stopAudio1 = ()=>{
-		this.state.audio1.pause();
-		this.state.audio1.currentTime = 0;
-		this.state.isPlaying1 = false;
 	}
 
 	getTranslation(chapter, verseNum){
@@ -113,12 +111,6 @@ class Chapter_Template extends Component {
 		return this.translation;
 	}
 
-	stopAudio2 = ()=>{
-		this.state.audio2.pause();
-		this.state.audio2.currentTime = 0;
-		this.state.isPlaying2 = false;
-
-	}
 	// Main function to handle both play and pause operations
 	playPauseButton1 = () => {
 
@@ -132,6 +124,15 @@ class Chapter_Template extends Component {
 		// Change the state of song
 		this.setState({ isPlaying1: !isPlaying1 });
 	};
+
+	stopAudio1 = ()=>{
+		let isPlaying1 = this.state.isPlaying1;
+		this.state.audio1.pause();
+		this.state.audio1.currentTime = 0;
+		// Change the state of song
+		this.setState({ isPlaying1: !isPlaying1 });
+	}
+
 	playPauseButton2 = () => {
 
 		// Get state of song
@@ -144,9 +145,21 @@ class Chapter_Template extends Component {
 		// Change the state of song
 		this.setState({ isPlaying2: !isPlaying2 });
 	};
+	stopAudio2 = ()=>{
+		let isPlaying2 = this.state.isPlaying2;
+
+		this.state.audio2.pause();
+		this.state.audio2.currentTime = 0;
+		this.setState({ isPlaying2: !isPlaying2 });
+	}
 	render() {
 		var header1 = "Verses " + this.verse + " to "
 		var header2 = ""
+
+		const { isPlaying1, isPlaying2} = this.state;
+		const imageSource1 = isPlaying1 ? imagePause : imagePlay;
+		const imageSource2 = isPlaying2 ? imagePause : imagePlay;
+
 		if (this.audio2 == "error")
 			header1 += this.last_verse;
 		else
@@ -161,12 +174,12 @@ class Chapter_Template extends Component {
 					<View style={styles.buttonContainer}>
 						<TouchableOpacity style={styles.buttonStyle} onPress={this.playPauseButton1}>
 						<Image
-						source={require('./icons/icons8-circled-play-100.png')} // image path
+						source={imageSource1} // image path
 						style={styles.image}/>
 						</TouchableOpacity>
 						<TouchableOpacity style={styles.buttonStyle} onPress={this.stopAudio1}>
 						<Image
-						source={require('./icons/icons8-stop-circled-100.png')} // image path
+						source={imageStop} // image path
 						style={styles.image}/>
 						</TouchableOpacity>
 					</View>
@@ -209,13 +222,12 @@ class Chapter_Template extends Component {
 						<View style={styles.container}>
 							<View style={styles.buttonContainer}>
 								<TouchableOpacity style={styles.buttonStyle} onPress={this.playPauseButton2}>
-								<Image
-								source={require('./icons/icons8-circled-play-100.png')} // image path
-								style={styles.image}/>
+								<Image source={imageSource2} // image path
+									style={styles.image}/>
 								</TouchableOpacity>
 								<TouchableOpacity style={styles.buttonStyle} onPress={this.stopAudio2}>
 								<Image
-								source={require('./icons/icons8-stop-circled-100.png')} // image path
+								source={imageStop} // image path
 								style={styles.image}/>
 								</TouchableOpacity>
 							</View>
@@ -350,6 +362,7 @@ const styles = StyleSheet.create({
         alignItems: 'center', // Center the button horizontally
         marginVertical: 15*scale, // Add vertical margin for spacing
 		flexDirection: 'row', // Arrange buttons in a row
+		justifyContent: 'space-between', // Creates space between buttons
     },
 });
 export default Chapter_Template;
