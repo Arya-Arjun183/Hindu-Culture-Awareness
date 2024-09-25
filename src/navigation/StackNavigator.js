@@ -76,7 +76,7 @@ const navigator = createStackNavigator(
       navigationOptions: ({ navigation }) => ({
         title: `Festivals`,
         headerRight: () =>  <TouchableOpacity onPress={() => navigation.navigate("AppHome")}>
-        <img src = {home} width={50} height={50}/>AppHome
+        <img src = {home} width={50} height={50}/>
       </TouchableOpacity>
       }),
     },
