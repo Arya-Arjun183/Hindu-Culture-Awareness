@@ -1,8 +1,9 @@
 import React from 'react';
-import { Text, StyleSheet, ScrollView, Image, View } from 'react-native';
+import { Text, ScrollView, Image, View } from 'react-native';
 import { Component } from 'react/cjs/react.production.min';
 import TextToSpeech from './TextToSpeech';
 import musicData from './music-data/music.json';
+import styles from './Styles';
 
 
 class Music_Template extends Component{
@@ -45,14 +46,5 @@ class Music_Template extends Component{
         );
     }
 }
-
-const styles = StyleSheet.create({
-    mainText:{
-        fontSize: 30,
-        textAlign: 'center',
-        fontFamily: 'Helvetica',
-        color:'#007FFF',
-    }
-})
 
 export default Music_Template;

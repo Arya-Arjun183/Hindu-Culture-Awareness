@@ -7,7 +7,6 @@ const AboutPage = () => {
     return (
         <div className="about-page">
         <header className="about-header">
-            <h1>About Us</h1>
             <p>Discover the stories behind Ananth and what drives us.</p>
         </header>
 
@@ -15,18 +14,20 @@ const AboutPage = () => {
             <h2>Our Mission</h2>
             <p>
             At Ananth, we believe that understanding diverse cultures enriches lives and fosters global harmony. Our mission is to make cultural exploration accessible and engaging, allowing users to connect with traditions, stories, and experiences from around the world.
+            We are constantly adding new information to Ananth, please navigate to the <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFK6jb2bXxZOXZiabqESybArdftwoPofQrJ0uz4loFwkJpmg/viewform?embedded=true" target="_blank" rel="noopener noreferrer">Feedback form</a> to submit your requests and we will do our best to add those features.
             </p>
         </section>
 
         <section className="team-section">
-            <h2>Meet The Team</h2>
+            <h2>Leadership Team</h2>
             <div className="team-member">
             <img src={myImage} alt="Team Member 1" />
             <div className="member-info">
                 <h3>Arjun Arya</h3>
                 <p>Founder & CEO</p>
                 <p>Arjun Arya is passionate about bridging cultures and he founded Ananth in December, 2021. His vision drives our app forward.
-                    He is currently a senior at High School in California.
+                    He is currently a senior at High School in California. Apart from Ananth, Arjun loves to build robots,
+                    he was world champion in FRC Robotics tournament 2022 and a runner-up in 2024.
                 </p>
             </div>
             </div>

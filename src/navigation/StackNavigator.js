@@ -53,8 +53,8 @@ const navigator = createStackNavigator(
       </TouchableOpacity>
       }),
     },
-    Verses_Translations: {
-      screen: Verses_Translations,
+    GitaHomePage: {
+      screen: GitaHomePage,
       navigationOptions: ({ navigation }) => ({
         title: `Gita Verses and Translations`,
         headerRight: () =>  <TouchableOpacity onPress={() => navigation.navigate("AppHome")}>
@@ -80,15 +80,7 @@ const navigator = createStackNavigator(
       </TouchableOpacity>
       }),
     },
-    GitaHomePage: {
-      screen: GitaHomePage,
-      navigationOptions: ({ navigation }) => ({
-        title: `Gita Verses`,
-        headerRight: () =>  <TouchableOpacity onPress={() => navigation.navigate("AppHome")}>
-        <img src = {home} width={50} height={50}/>
-      </TouchableOpacity>
-      }),
-    },
+   
     Chapter_Template: {
       screen: Chapter_Template,
       navigationOptions: ({navigation}) => ({
@@ -192,7 +184,7 @@ const navigator = createStackNavigator(
   {
     initialRouteName: "AppHome",
     defaultNavigationOptions:  {
-      title: "",
+      title: "Welcome to Ananth",
       headerStyle: {
         backgroundColor: 'darkorange',
       },

@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 
 // Import your audio file
-import { Text, StyleSheet, View, Button, Image, TouchableOpacity } from 'react-native';
+import { Text, StyleSheet, View, Image, TouchableOpacity, Dimensions} from 'react-native';
 import { ScrollView } from "react-native-gesture-handler";
+const { width } = Dimensions.get('window');
+var scale = (Math.sqrt(width/1728)); // Base width for scaling
 
 import chapter1 from './gita-translations-json/gita_chapter_1.json';
 import chapter2 from './gita-translations-json/gita_chapter_2.json';
@@ -288,22 +290,23 @@ class Chapter_Template extends Component {
 }
 const styles = StyleSheet.create({
 	textStyle:{
-		fontSize:25,
+		color: '#777',
+		fontSize:25*scale,
 		fontFamily: 'Helvetica',
 		backgroundColor: 'white',
 		justifyContent: 'space-between',
 		flex:1,
-		marginTop:5,
-		marginBottom: 5,
-		marginLeft: 5,
-		marginRight: 5,
-		paddingVertical: 30,
-		paddingStart: 5,
-		paddingEnd: 10,
-		paddingHorizontal: 30,
-		borderWidth: 2,
+		marginTop:5*scale,
+		marginBottom: 5*scale,
+		marginLeft: 5*scale,
+		marginRight: 5*scale,
+		paddingVertical: 30*scale,
+		paddingStart: 5*scale,
+		paddingEnd: 10*scale,
+		paddingHorizontal: 30*scale,
+		borderWidth: 2*scale,
 		borderColor: "grey",
-		borderRadius: 0.5,
+		borderRadius: 0.5*scale,
 		textAlign:'center',
 		fontStyle: 'italic',
 	},
@@ -312,15 +315,15 @@ const styles = StyleSheet.create({
 		fontFamily: 'Helvetica',
 		justifyContent: 'space-between',
 		flex:1,
-		fontSize: 30,
-		margin: 10,
+		fontSize: 30*scale,
+		margin: 10*scale,
     	textAlign:'center',
 	},
 	textStyleSmall:{
 		fontFamily: 'Helvetica',
 		justifyContent: 'space-between',
 		flex:1,
-		fontSize: 20,
+		fontSize: 25*scale,
 		textAlign: 'center',
 		fontStyle: 'italic',
 		fontWeight: 'bold',
@@ -328,8 +331,8 @@ const styles = StyleSheet.create({
 		color: '#ff8c04',
 	},
 	buttonStyle: {
-        width: 50, // Set your desired button width
-        height: 50, // Set your desired button height
+        width: 50*scale, // Set your desired button width
+        height: 50*scale, // Set your desired button height
         justifyContent: 'center',
         alignItems: 'center',
     },
@@ -345,7 +348,7 @@ const styles = StyleSheet.create({
     },
 	buttonContainer: {
         alignItems: 'center', // Center the button horizontally
-        marginVertical: 15, // Add vertical margin for spacing
+        marginVertical: 15*scale, // Add vertical margin for spacing
 		flexDirection: 'row', // Arrange buttons in a row
     },
 });
