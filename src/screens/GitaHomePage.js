@@ -436,7 +436,7 @@ const GitaHomePage = (props) => {
       image9: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter4/4_41.png",
       image10:"https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter4/4_42.png",
       })}>
-        <Text style={styles.textButton}>Chapter Four - Verses 33-43</Text>
+        <Text style={styles.textButton}>Chapter Four - Verses 33-42</Text>
     </TouchableOpacity>
     <TouchableOpacity 
     onPress={() => props.navigation.navigate("Chapter_Template",{
