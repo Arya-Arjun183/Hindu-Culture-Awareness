@@ -129,8 +129,10 @@ class Chapter_Template extends Component {
 		let isPlaying1 = this.state.isPlaying1;
 		this.state.audio1.pause();
 		this.state.audio1.currentTime = 0;
-		// Change the state of song
-		this.setState({ isPlaying1: !isPlaying1 });
+		if (isPlaying1) {
+			// Change the state of song
+			this.setState({ isPlaying1: !isPlaying1 });
+		}
 	}
 
 	playPauseButton2 = () => {
@@ -150,7 +152,9 @@ class Chapter_Template extends Component {
 
 		this.state.audio2.pause();
 		this.state.audio2.currentTime = 0;
-		this.setState({ isPlaying2: !isPlaying2 });
+		if (isPlaying2){
+			this.setState({ isPlaying2: !isPlaying2 });
+		}
 	}
 	render() {
 		var header1 = "Verses " + this.verse + " to "
@@ -295,7 +299,6 @@ class Chapter_Template extends Component {
 						</>
 					) : null}
 				</View>
-
 			</ScrollView>
 		)
 	}
@@ -343,11 +346,12 @@ const styles = StyleSheet.create({
 		color: '#ff8c04',
 	},
 	buttonStyle: {
-        width: 100*scale, // Set your desired button width
-        height: 100*scale, // Set your desired button height
+        width: 120*scale, // Set your desired button width
+        height: 120*scale, // Set your desired button height
         justifyContent: 'center',
         alignItems: 'center',
 		marginHorizontal: 15*scale, // Optional: Adds margin between buttons
+		marginBottom: 30*scale, // Optional: Adds margin between buttons
     },
 	image: {
         width: '100%',
