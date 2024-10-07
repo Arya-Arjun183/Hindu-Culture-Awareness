@@ -421,9 +421,9 @@ const GitaHomePage = (props) => {
     onPress={() => props.navigation.navigate("Chapter_Template",{
       chapter:4,
       verse:33,
-      last_verse:43,
+      last_verse:42,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_33-37.mp3",
-      url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_38-43.mp3",  
+      url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/4_38-42.mp3",  
       title: "Chapter Four - Verses 33-43",
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter4/4_33.png",
       image2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter4/4_34.png",
@@ -435,7 +435,6 @@ const GitaHomePage = (props) => {
       image8: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter4/4_40.png",
       image9: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter4/4_41.png",
       image10:"https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter4/4_42.png",
-      image11:"https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter4/4_43.png",
       })}>
         <Text style={styles.textButton}>Chapter Four - Verses 33-43</Text>
     </TouchableOpacity>
