@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
       color: '#ff8c04',
       fontFamily:'EB Garamond',
       textAlign:'center',
-      margin: 5*scale,
+      margin: 10*scale,
     },
     textStyle:{
       resizeMode: "stretch",

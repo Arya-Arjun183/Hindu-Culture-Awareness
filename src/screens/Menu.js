@@ -8,11 +8,19 @@ const interfaith = require('./icons/interfaith.png');
 const music = require('./icons/music.jpeg');
 import styles from './Styles';
 
+import { logPageView } from '../analytics';
+
+const handleClick = (props, menu) => {
+  logPageView('AppHome', props);
+
+  props.navigation.navigate(menu);
+};
+
 const Menu = (props) => {
 
   return (
   <View>
-    <TouchableOpacity onPress={()=> props.navigation.navigate("Science")}>
+    <TouchableOpacity onPress={()=> handleClick(props,"Science")}>
         <Text style = {styles.textButton}>The Science Behind Hinduism</Text>
     </TouchableOpacity>
     <Image
@@ -27,7 +35,7 @@ const Menu = (props) => {
             }}
             source = {scienceImg}
         ></Image>
-    <TouchableOpacity onPress={()=> props.navigation.navigate("InterFaith")}>
+    <TouchableOpacity onPress={()=> handleClick(props,"InterFaith")}>
         <Text style = {styles.textButton}>Interfaith Structures in Hinduism</Text>
     </TouchableOpacity>
     <Image
@@ -42,7 +50,7 @@ const Menu = (props) => {
             }}
             source = {interfaith}
         ></Image>
-    <TouchableOpacity onPress={() => props.navigation.navigate("GitaHomePage")}>
+    <TouchableOpacity onPress={() => handleClick(props,"GitaHomePage")}>
       <Text style={styles.textButton}>Gita Verses and Translations</Text>
     </TouchableOpacity>
     <Image
@@ -58,7 +66,7 @@ const Menu = (props) => {
         source = {verses}
       >
       </Image>
-    <TouchableOpacity onPress={() => props.navigation.navigate("Music")}>
+    <TouchableOpacity onPress={() => handleClick(props,"Music")}>
       <Text style={styles.textButton}>Music</Text>
     </TouchableOpacity>
     <Image
@@ -75,7 +83,7 @@ const Menu = (props) => {
       >
       </Image>
     <TouchableOpacity
-    onPress={() => props.navigation.navigate("Gods_Godesses")}>
+    onPress={() => handleClick(props,"Gods_Godesses")}>
       <Text style={styles.textButton}>Gods and Godesses</Text>
     </TouchableOpacity>
     <Image
@@ -91,7 +99,7 @@ const Menu = (props) => {
         source = {om}
       >
       </Image>
-    <TouchableOpacity onPress={() => props.navigation.navigate("Festivals")}>
+    <TouchableOpacity onPress={() => handleClick(props,"Festivals")}>
         <Text style={styles.textButton}>Festivals</Text>
     </TouchableOpacity>
     <Image
@@ -107,10 +115,10 @@ const Menu = (props) => {
         source = {festivals}
       >
       </Image>
-      <TouchableOpacity onPress={()=>props.navigation.navigate("AboutUs")}>
+      <TouchableOpacity onPress={()=>handleClick(props,"AboutUs")}>
         <Text style={styles.textButton}>About Us</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => props.navigation.navigate("Feedback")}>
+      <TouchableOpacity onPress={() => handleClick(props,"Feedback")}>
         <Text style={styles.textButton}>Feedback</Text>
       </TouchableOpacity>
   </View>
