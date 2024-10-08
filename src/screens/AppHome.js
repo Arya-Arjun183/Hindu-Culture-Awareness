@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, ScrollView, TouchableOpacity, Image } from 'react-native';
+import { Text, ScrollView, TouchableOpacity, Image } from 'react-native';
 const gita = require('./icons/gita-icon.jpeg')
 
 import { logPageView } from '../analytics';
