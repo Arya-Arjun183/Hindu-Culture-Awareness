@@ -11,7 +11,7 @@ import styles from './Styles';
 import { logPageView } from '../analytics';
 
 const handleClick = (props, menu) => {
-  logPageView('AppHome', props);
+  logPageView('AppHome', menu);
 
   props.navigation.navigate(menu);
 };
