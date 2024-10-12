@@ -3,6 +3,7 @@ import React, { Component } from "react";
 // Import your audio file
 import { Text, StyleSheet, View, Image, TouchableOpacity, Dimensions} from 'react-native';
 import { ScrollView } from "react-native-gesture-handler";
+
 const { width } = Dimensions.get('window');
 var scale = (Math.pow(width/1728, 0.4)); // Base width for scaling
 
@@ -26,7 +27,7 @@ import chapter16 from './gita-translations-json/gita_chapter_16.json';
 import chapter17 from './gita-translations-json/gita_chapter_17.json';
 import chapter18 from './gita-translations-json/gita_chapter_18.json';
 
-const ENGLISH_TRANSLATION_HEADER = 'English Translation \n';
+const ENGLISH_TRANSLATION_HEADER = 'English Translation By Swami Adidevananda\n';
 const imagePause = require('./icons/icons8-pause-button-96.png');
 const imagePlay = require('./icons/icons8-circled-play-100.png');
 const imageStop = require('./icons/icons8-stop-circled-100.png');
@@ -299,6 +300,12 @@ class Chapter_Template extends Component {
 						</>
 					) : null}
 				</View>
+				<View style={styles.container_references}>
+					<div>
+					<h2>References</h2>
+					<p>1. <a href="https://www.gitasupersite.iitk.ac.in/srimad/" target="_blank" rel="noopener noreferrer">Srimad Bhagwad Gita Supersite</a></p>
+					</div>
+				</View>
 			</ScrollView>
 		)
 	}
@@ -357,6 +364,13 @@ const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
         resizeMode: 'cover', // Cover the button area with the image
+    },
+	container_references: {
+        flex: 1,
+        justifyContent: 'center', // Center vertically
+        alignItems: 'left', // Center horizontally
+		marginVertical: 15*scale, // Optional: Adds margin between buttons
+		marginHorizontal: 15*scale, // Optional: Adds margin between buttons
     },
 	container: {
         flex: 1,

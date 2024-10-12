@@ -24,10 +24,10 @@ const AboutPage = () => {
             <img src={myImage} alt="Team Member 1" />
             <div className="member-info">
                 <h3>Arjun A</h3>
-                <p>Founder & CEO</p>
+                <h4>Founder & CEO</h4>
                 <p>Arjun is passionate about bridging cultures and he founded Ananth in December, 2021. His vision drives our app forward.
                     He is currently a senior at High School in California. Apart from Ananth, Arjun loves to build robots.
-                    He was a world champion in FRC Robotics tournament 2022 and a runner-up in 2024.
+                    Arjun's team won FRC World Robotics championionship in 2022 and were runner-up in 2024.
                 </p>
             </div>
             </div>

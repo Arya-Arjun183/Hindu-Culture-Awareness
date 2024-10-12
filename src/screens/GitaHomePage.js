@@ -1511,7 +1511,7 @@ const GitaHomePage = (props) => {
       verse:71,
       last_verse:78,
       url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/18_71-75.mp3",
-      url1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/18_76-78.mp3",
+      url2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Audio/18_76-78.mp3",
       title: "Chapter Eighteen - Verses 71-78",
       image1: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter18/18_71.png",
       image2: "https://github.com/Arya-Arjun183/Resources/raw/main/Gita-Slokhas/Pictures/Chapter18/18_72.png",
