@@ -17,15 +17,21 @@ const TextToSpeech = ({ text }) => {
 
   const handlePlay = () => {
     const synth = window.speechSynthesis;
-
+  
     if (isPaused) {
-      synth.resume();
+      // Check if the utterance is already speaking or paused
+      if (synth.paused) {
+        synth.resume();
+      } else {
+        synth.speak(utterance);
+      }
+    } else {
+      synth.speak(utterance);
     }
-
-    synth.speak(utterance);
-
+  
     setIsPaused(false);
   };
+  
 
   const handlePause = () => {
     const synth = window.speechSynthesis;
