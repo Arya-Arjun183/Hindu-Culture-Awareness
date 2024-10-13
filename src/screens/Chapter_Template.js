@@ -8,26 +8,46 @@ const { width } = Dimensions.get('window');
 var scale = (Math.pow(width/1728, 0.4)); // Base width for scaling
 
 
-import chapter1 from './gita-translations-json/gita_chapter_1.json';
-import chapter2 from './gita-translations-json/gita_chapter_2.json';
-import chapter3 from './gita-translations-json/gita_chapter_3.json';
-import chapter4 from './gita-translations-json/gita_chapter_4.json';
-import chapter5 from './gita-translations-json/gita_chapter_5.json';
-import chapter6 from './gita-translations-json/gita_chapter_6.json';
-import chapter7 from './gita-translations-json/gita_chapter_7.json';
-import chapter8 from './gita-translations-json/gita_chapter_8.json';
-import chapter9 from './gita-translations-json/gita_chapter_9.json';
-import chapter10 from './gita-translations-json/gita_chapter_10.json';
-import chapter11 from './gita-translations-json/gita_chapter_11.json';
-import chapter12 from './gita-translations-json/gita_chapter_12.json';
-import chapter13 from './gita-translations-json/gita_chapter_13.json';
-import chapter14 from './gita-translations-json/gita_chapter_14.json';
-import chapter15 from './gita-translations-json/gita_chapter_15.json';
-import chapter16 from './gita-translations-json/gita_chapter_16.json';
-import chapter17 from './gita-translations-json/gita_chapter_17.json';
-import chapter18 from './gita-translations-json/gita_chapter_18.json';
+import chapter1 from './gita-translations-json/english/gita_chapter_1.json';
+import chapter2 from './gita-translations-json/english/gita_chapter_2.json';
+import chapter3 from './gita-translations-json/english/gita_chapter_3.json';
+import chapter4 from './gita-translations-json/english/gita_chapter_4.json';
+import chapter5 from './gita-translations-json/english/gita_chapter_5.json';
+import chapter6 from './gita-translations-json/english/gita_chapter_6.json';
+import chapter7 from './gita-translations-json/english/gita_chapter_7.json';
+import chapter8 from './gita-translations-json/english/gita_chapter_8.json';
+import chapter9 from './gita-translations-json/english/gita_chapter_9.json';
+import chapter10 from './gita-translations-json/english/gita_chapter_10.json';
+import chapter11 from './gita-translations-json/english/gita_chapter_11.json';
+import chapter12 from './gita-translations-json/english/gita_chapter_12.json';
+import chapter13 from './gita-translations-json/english/gita_chapter_13.json';
+import chapter14 from './gita-translations-json/english/gita_chapter_14.json';
+import chapter15 from './gita-translations-json/english/gita_chapter_15.json';
+import chapter16 from './gita-translations-json/english/gita_chapter_16.json';
+import chapter17 from './gita-translations-json/english/gita_chapter_17.json';
+import chapter18 from './gita-translations-json/english/gita_chapter_18.json';
+
+import hindi_chapter1 from './gita-translations-json/hindi/gita_chapter_1.json';
+import hindi_chapter2 from './gita-translations-json/hindi/gita_chapter_2.json';
+import hindi_chapter3 from './gita-translations-json/hindi/gita_chapter_3.json';
+import hindi_chapter4 from './gita-translations-json/hindi/gita_chapter_4.json';
+import hindi_chapter5 from './gita-translations-json/hindi/gita_chapter_5.json';
+import hindi_chapter6 from './gita-translations-json/hindi/gita_chapter_6.json';
+import hindi_chapter7 from './gita-translations-json/hindi/gita_chapter_7.json';
+import hindi_chapter8 from './gita-translations-json/hindi/gita_chapter_8.json';
+import hindi_chapter9 from './gita-translations-json/hindi/gita_chapter_9.json';
+import hindi_chapter10 from './gita-translations-json/hindi/gita_chapter_10.json';
+import hindi_chapter11 from './gita-translations-json/hindi/gita_chapter_11.json';
+import hindi_chapter12 from './gita-translations-json/hindi/gita_chapter_12.json';
+import hindi_chapter13 from './gita-translations-json/hindi/gita_chapter_13.json';
+import hindi_chapter14 from './gita-translations-json/hindi/gita_chapter_14.json';
+import hindi_chapter15 from './gita-translations-json/hindi/gita_chapter_15.json';
+import hindi_chapter16 from './gita-translations-json/hindi/gita_chapter_16.json';
+import hindi_chapter17 from './gita-translations-json/hindi/gita_chapter_17.json';
+import hindi_chapter18 from './gita-translations-json/hindi/gita_chapter_18.json';
 
 const ENGLISH_TRANSLATION_HEADER = 'English Translation By Swami Adidevananda\n';
+const HINDI_TRANSLATION_HEADER = 'Hindi Translation By Swami Tejomayananda\n';
 const imagePause = require('./icons/icons8-pause-button-96.png');
 const imagePlay = require('./icons/icons8-circled-play-100.png');
 const imageStop = require('./icons/icons8-stop-circled-100.png');
@@ -68,43 +88,115 @@ class Chapter_Template extends Component {
 		this.stopAudio2();
 	}
 
-	getTranslation(chapter, verseNum){
+	getTranslation(chapter, verseNum, lang){
 		if (chapter==1){
+			if (lang == "hindi"){
+				this.mainFile = hindi_chapter1;
+			} else{
 				this.mainFile = chapter1;
+			}
 		} else if (chapter==2){
+			if (lang == "hindi"){
+				this.mainFile = hindi_chapter2;
+			} else {
 				this.mainFile = chapter2;
+			}
 		} else if (chapter==3){
+			if (lang == "hindi"){
+				this.mainFile = hindi_chapter3;
+			} else{
 				this.mainFile = chapter3;
+			}
 		} else if (chapter==4){
+			if (lang == "hindi"){
+				this.mainFile = hindi_chapter4;
+			} else{
 				this.mainFile = chapter4;
+			}
 		} else if (chapter==5){
+			if (lang == "hindi"){
+				this.mainFile = hindi_chapter5;
+			} else{
 				this.mainFile = chapter5;
+			}
 		} else if (chapter==6){
+			if (lang == "hindi"){
+				this.mainFile = hindi_chapter6;
+			} else{
 				this.mainFile = chapter6;
+			}
 		} else if (chapter==7){
+			if (lang == "hindi"){
+				this.mainFile = hindi_chapter7;
+			} else{
 				this.mainFile = chapter7;
+			}
 		} else if (chapter==8){
-			this.mainFile = chapter8;
+			if (lang == "hindi"){
+				this.mainFile = hindi_chapter8;
+			} else{
+				this.mainFile = chapter8;
+			}
 		} else if (chapter==9){
-			this.mainFile = chapter9;
+			if (lang == "hindi"){
+				this.mainFile = hindi_chapter9;
+			} else{
+				this.mainFile = chapter9;
+			}
 		} else if (chapter==10){
-			this.mainFile = chapter10;
+			if (lang == "hindi"){
+				this.mainFile = hindi_chapter10;
+			} else{
+				this.mainFile = chapter10;
+			}
 		} else if (chapter==11){
-			this.mainFile = chapter11;
+			if (lang == "hindi"){
+				this.mainFile = hindi_chapter11;
+			} else{
+				this.mainFile = chapter11;
+			}
 		} else if (chapter==12){
+			if (lang == "hindi"){
+				this.mainFile = hindi_chapter12;
+			} else{
 				this.mainFile = chapter12;
+			}
 		} else if (chapter==13){
+			if (lang == "hindi"){
+				this.mainFile = hindi_chapter13;
+			} else{
 				this.mainFile = chapter13;
+			}
 		} else if (chapter==14){
+			if (lang == "hindi"){
+				this.mainFile = hindi_chapter14;
+			} else{
 				this.mainFile = chapter14;
+			}
 		} else if (chapter==15){
+			if (lang == "hindi"){
+				this.mainFile = hindi_chapter15;
+			} else{
 				this.mainFile = chapter15;
+			}
 		} else if (chapter==16){
+			if (lang == "hindi"){
+				this.mainFile = hindi_chapter16;
+			} else{
 				this.mainFile = chapter16;
+			}
 		} else if (chapter==17){
+			if (lang == "hindi"){
+				this.mainFile = hindi_chapter17;
+			} else{
 				this.mainFile = chapter17;
+			}
 		} else if (chapter==18){
+			if (lang == "hindi"){
+				this.mainFile = hindi_chapter18;
+			} else{
 				this.mainFile = chapter18;
+			}
 		}
 		this.keyToFind = chapter+"."+verseNum;
 		this.translation = this.mainFile[this.keyToFind];
@@ -194,21 +286,49 @@ class Chapter_Template extends Component {
 					<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 					{this.getTranslation(this.chapterNum,this.verse)}
 				</Text>
+				<Text style = {styles.textStyle}>
+					<Text style={styles.textStyleSmall}>{HINDI_TRANSLATION_HEADER}</Text>
+					{this.getTranslation(this.chapterNum,this.verse, "hindi")}
+				</Text>
 				<img src = {this.image2}/>
 				<Text style = {styles.textStyle}>
 					<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 					{this.getTranslation(this.chapterNum,this.verse+1)}
 				</Text>
-				<img src = {this.image3}/>
 				<Text style = {styles.textStyle}>
-				<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-					{this.getTranslation(this.chapterNum,this.verse+2)}
+					<Text style={styles.textStyleSmall}>{HINDI_TRANSLATION_HEADER}</Text>
+					{this.getTranslation(this.chapterNum,this.verse+1, "hindi")}
 				</Text>
-				<img src = {this.image4}/>
-				<Text style = {styles.textStyle}>
-				<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
-					{this.getTranslation(this.chapterNum,this.verse+3)}
-				</Text>
+				<View>
+					{this.image3 != 'error'? (
+						<>
+					<img src = {this.image3}/>
+					<Text style = {styles.textStyle}>
+					<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
+						{this.getTranslation(this.chapterNum,this.verse+2)}
+					</Text>
+					<Text style = {styles.textStyle}>
+						<Text style={styles.textStyleSmall}>{HINDI_TRANSLATION_HEADER}</Text>
+						{this.getTranslation(this.chapterNum,this.verse+2, "hindi")}
+					</Text>
+					</>
+					) : null}
+				</View>
+				<View>
+					{this.image4 != 'error'? (
+						<>
+						<img src = {this.image4}/>
+						<Text style = {styles.textStyle}>
+						<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
+							{this.getTranslation(this.chapterNum,this.verse+3)}
+						</Text>
+						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{HINDI_TRANSLATION_HEADER}</Text>
+							{this.getTranslation(this.chapterNum,this.verse+3, "hindi")}
+						</Text>
+						</>
+				) : null}
+			</View>
 				<View>
 					{this.image5 != 'error'? (
 						<>
@@ -216,6 +336,10 @@ class Chapter_Template extends Component {
 						<Text style = {styles.textStyle}>
 							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+4)}
+						</Text>
+						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{HINDI_TRANSLATION_HEADER}</Text>
+							{this.getTranslation(this.chapterNum,this.verse+4,"hindi")}
 						</Text>
 						</>
 					) : null}
@@ -241,7 +365,11 @@ class Chapter_Template extends Component {
 						<Text style = {styles.textStyle}>
 							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+5)}
-				</Text>
+						</Text>
+						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{HINDI_TRANSLATION_HEADER}</Text>
+							{this.getTranslation(this.chapterNum,this.verse+5,"hindi")}
+						</Text>
 						</>
 					) : null}
 				</View>
@@ -252,6 +380,10 @@ class Chapter_Template extends Component {
 						<Text style = {styles.textStyle}>
 							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+6)}
+						</Text>
+						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{HINDI_TRANSLATION_HEADER}</Text>
+							{this.getTranslation(this.chapterNum,this.verse+6,"hindi")}
 						</Text>
 						</>
 					) : null}
@@ -264,6 +396,10 @@ class Chapter_Template extends Component {
 							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+7)}
 						</Text>
+						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{HINDI_TRANSLATION_HEADER}</Text>
+							{this.getTranslation(this.chapterNum,this.verse+7,"hindi")}
+						</Text>
 						</>
 					) : null}
 				</View>
@@ -274,6 +410,10 @@ class Chapter_Template extends Component {
 						<Text style = {styles.textStyle}>
 							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+8)}
+						</Text>
+						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{HINDI_TRANSLATION_HEADER}</Text>
+							{this.getTranslation(this.chapterNum,this.verse+8,"hindi")}
 						</Text>
 						</>
 					) : null}
@@ -286,6 +426,10 @@ class Chapter_Template extends Component {
 							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+9)}
 						</Text>
+						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{HINDI_TRANSLATION_HEADER}</Text>
+							{this.getTranslation(this.chapterNum,this.verse+9,"hindi")}
+						</Text>
 						</>
 					) : null}
 				</View>
@@ -296,6 +440,10 @@ class Chapter_Template extends Component {
 						<Text style = {styles.textStyle}>
 							<Text style={styles.textStyleSmall}>{ENGLISH_TRANSLATION_HEADER}</Text>
 							{this.getTranslation(this.chapterNum,this.verse+10)}
+						</Text>
+						<Text style = {styles.textStyle}>
+							<Text style={styles.textStyleSmall}>{HINDI_TRANSLATION_HEADER}</Text>
+							{this.getTranslation(this.chapterNum,this.verse+10,"hindi")}
 						</Text>
 						</>
 					) : null}
