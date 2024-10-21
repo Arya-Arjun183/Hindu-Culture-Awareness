@@ -1,53 +1,66 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from 'react';
 
 const TextToSpeech = ({ text }) => {
   const [isPaused, setIsPaused] = useState(false);
-  const [utterance, setUtterance] = useState(null);
+  const [isSpeaking, setIsSpeaking] = useState(false);
+  const synthRef = useRef(window.speechSynthesis);
+  const utteranceRef = useRef(null);
 
   useEffect(() => {
-    const synth = window.speechSynthesis;
-    const u = new SpeechSynthesisUtterance(text);
+    if (text) {
+      utteranceRef.current = new SpeechSynthesisUtterance(text);
+      utteranceRef.current.voice = synthRef.current.getVoices().find((voice) => voice.name === 'Google UK English Male');
 
-    setUtterance(u);
-
-    return () => {
-      synth.cancel();
-    };
+      utteranceRef.current.onend = () => {
+        setIsSpeaking(false);
+        setIsPaused(false);
+      };
+    }
   }, [text]);
 
   const handlePlay = () => {
-    const synth = window.speechSynthesis;
+    if (!utteranceRef.current || isSpeaking) return;
 
-    if (isPaused) {
-      synth.resume();
-    }
-
-    synth.speak(utterance);
-
-    setIsPaused(false);
+    setIsSpeaking(true);
+    synthRef.current.speak(utteranceRef.current);
   };
 
   const handlePause = () => {
-    const synth = window.speechSynthesis;
+    if (isSpeaking && !isPaused) {
+      synthRef.current.pause();
+      setIsPaused(true);
+    }
+  };
 
-    synth.pause();
-
-    setIsPaused(true);
+  const handleResume = () => {
+    if (isPaused) {
+      synthRef.current.resume();
+      setIsPaused(false);
+    }
   };
 
   const handleStop = () => {
-    const synth = window.speechSynthesis;
-
-    synth.cancel();
-
-    setIsPaused(false);
+    if (isSpeaking) {
+      synthRef.current.cancel();
+      setIsSpeaking(false);
+      setIsPaused(false);
+    }
   };
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px', marginBottom: '5px'}}>
-      <button style={{ marginRight: '5px'}} onClick={handlePlay}>{isPaused ? "Resume" : "Play"}</button>
-      <button style={{ marginRight: '5px'}} onClick={handlePause}>Pause</button>
-      <button style={{ marginRight: '5px'}} onClick={handleStop}>Stop</button>
+    <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px', marginBottom: '5px' }}>
+      <button style={{ marginRight: '5px' }} onClick={handlePlay} disabled={isSpeaking}>
+        {isSpeaking ? 'Speaking...' : 'Play'}
+      </button>
+      <button style={{ marginRight: '5px' }} onClick={handlePause} disabled={!isSpeaking || isPaused}>
+        Pause
+      </button>
+      <button style={{ marginRight: '5px' }} onClick={handleResume} disabled={!isPaused}>
+        Resume
+      </button>
+      <button style={{ marginRight: '5px' }} onClick={handleStop}>
+        Stop
+      </button>
     </div>
   );
 };
